@@ -35,3 +35,6 @@ to create a new project:
 # Creating Project:
 Link to youtube video's going over espressif C code:
 https://www.youtube.com/@ControltheController
+
+- WS2812 ESP-IDF Example code:
+-   https://github.com/mirronelli/neopixel
