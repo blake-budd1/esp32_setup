@@ -31,6 +31,7 @@ to create a new project:
 
   - to view output of program:
       -     idf.py -p <PORT> monitor
-    
+
+# Creating Project:
 Link to youtube video's going over espressif C code:
 https://www.youtube.com/@ControltheController
