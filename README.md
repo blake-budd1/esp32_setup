@@ -1,5 +1,7 @@
 # esp32_setup
 Initial setup of esp32 and build walk through
+This is done with the following hardware:
+https://www.adafruit.com/product/3405
 
 # Directions:
 Follow download directions at the following link for MAC / LINUX / WINDOWS :
@@ -12,19 +14,19 @@ Once this is downloaded, a terminal will open:
 
 to create a new project:
   - in  C:\Espressif\frameworks\esp-idf-v5.1.1/<directory_name>/ directory:
-      idf.py create-project <project_name>
-      cd /<project_name>
+      - idf.py create-project <project_name>
+      - cd /<project_name>
 
   - to set target:
-      idf.py set-target <board>
-      in this case, <board> = esp32
+      - idf.py set-target <board>
+      - in this case, <board> = esp32
 
   - to initailly build / download all possible packages to use:
-      idf.py build 
+      - idf.py build 
 
   - to flash build onto board:
-      idf.py -p <PORT> flash
-      <PORT> is COM<num> in device manager
+      - idf.py -p <PORT> flash
+      - <PORT> is COM<num> in device manager
 
   - to view output of program:
-      idf.py -p <PORT> monitor
+      - idf.py -p <PORT> monitor
