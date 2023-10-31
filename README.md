@@ -19,7 +19,8 @@ to create a new project:
 
   - to set target:
       - idf.py set-target <board>
-      - in this case, <board> = esp32
+      - in this case:
+      -     idf.py set-target esp32
 
   - to initailly build / download all possible packages to use:
       - idf.py build 
