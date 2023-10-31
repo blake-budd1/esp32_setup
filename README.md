@@ -1,3 +1,6 @@
+# ESP API Documentation:
+-    https://docs.espressif.com/projects/esp-idf/en/latest/esp32/search.html?q=&check_keywords=yes&area=default
+
 # esp32_setup
 Initial setup of esp32 and build walk through
 This is done with the following hardware:
