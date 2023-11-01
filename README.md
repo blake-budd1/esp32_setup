@@ -39,7 +39,5 @@ to create a new project:
 Link to youtube video's going over espressif C code:
 https://www.youtube.com/@ControltheController
 
-- WS2812 ESP-IDF Example code:
--   https://github.com/mirronelli/neopixel
-
+- Example code for the screen:
 - https://github.com/lvgl/lv_port_esp32
