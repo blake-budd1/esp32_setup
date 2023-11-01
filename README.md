@@ -41,3 +41,6 @@ Link to youtube video's going over espressif C code:
 
 Example code for the screen:
 - https://github.com/lvgl/lv_port_esp32
+
+# Settings for the st7789 Screen:
+  - 240x133px
