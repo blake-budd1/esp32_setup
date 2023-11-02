@@ -41,6 +41,8 @@ Link to youtube video's going over espressif C code:
 
 Example code for the screen:
 - https://github.com/lvgl/lv_port_esp32
+Github repo with example of decoding jpegs to the ST7789:
+- https://github.com/nopnop2002/esp-idf-st7789/tree/master
 
 # Settings for the st7789 Screen:
   - 240x135px
