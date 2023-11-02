@@ -1,0 +1,11 @@
+Hardware goals completed during pre-alpha build:
+- WIFI Setup:
+  - During the pre-alpha build:
+    - Wifi setup using esp_wifi modules within the esp-idf provided drivers.
+    - Wifi is able to:
+      - Connect to wifi network (ie. connect to phone hotspot)
+      - Host it's own network (ie. can connect to the board via wifi)
+  - Known bugs at time of pre-alpha build:
+      - There is a bug that is showing up when esp_wifi_start() is called, although the wifi is still connecting for both options.
+          - After looking into this, it seems there is an outdated dependency for the command within the provided espressif drivers that is being investigated (although, has proven not to be an issue at this time).
+- ST7789 (screen setup):
