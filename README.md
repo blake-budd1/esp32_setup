@@ -34,8 +34,9 @@ to create a new project:
 
   - to view output of program:
       -     idf.py -p <PORT> monitor
-
-# Creating Project:
+# Sources
+- - 
+## Creating Project:
 Link to youtube video's going over espressif C code:
 - https://www.youtube.com/@ControltheController
 
@@ -45,9 +46,9 @@ Example code for the screen:
 Github repo with example of decoding jpegs to the ST7789:
 - https://github.com/nopnop2002/esp-idf-st7789/tree/master
 
-# Settings for the st7789 Screen:
+## Settings for the st7789 Screen:
   - 240x135px
 
-# Youtube help for setting up wifi:
+## Youtube help for setting up wifi:
   - videos in this playlist go over both hosting a wifi connection on the ESP32 and connecting to an external network with the ESP32:
   - https://www.youtube.com/watch?v=4Tz5j72uiUY
