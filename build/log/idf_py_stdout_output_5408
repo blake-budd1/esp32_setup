@@ -1,0 +1,3510 @@
+([0;32mets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 271414342, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Oct 31 2023 16:43:06[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e950h (125264) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0002e978 vaddr=3ffb0000 size=016a0h (  5792) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=79c34h (498740) map[0m
+[0;32mI (336) esp_image: segment 3: paddr=000a9c5c vaddr=3ffb16a0 size=02018h (  8216) load[0m
+[0;32mI (339) esp_image: segment 4: paddr=000abc7c vaddr=40080000 size=15574h ( 87412) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu up.[0m
+[0;32mI (401) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (419) cpu_start: Pro cpu start user code[0m
+[0;32mI (419) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (419) cpu_start: Application information:[0m
+[0;32mI (423) cpu_start: Project name:     wifi[0m
+[0;32mI (428) cpu_start: App version:      v5.1.1[0m
+[0;32mI (433) cpu_start: Compile time:     Oct 31 2023 16:43:40[0m
+[0;32mI (439) cpu_start: ELF file SHA256:  4fb48dc3528d62fc...[0m
+[0;32mI (445) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (450) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (455) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (459) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (464) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (472) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (477) heap_init: At 3FFB7738 len 000288C8 (162 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (496) heap_init: At 40095574 len 0000AA8C (42 KiB): IRAM[0m
+[0;32mI (504) spi_flash: detected chip: generic[0m
+[0;32mI (507) spi_flash: flash io: dio[0m
+[0;33mW (511) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (525) app_start: Starting scheduler on CPU0[0m
+[0;32mI (529) app_start: Starting scheduler on CPU1[0m
+[0;32mI (529) main_task: Started on CPU0[0m
+[0;32mI (539) main_task: Calling app_main()[0m
+I (569) wifi:wifi driver task: 3ffbe330, prio:23, stack:6656, core=0
+I (569) wifi:wifi firmware version: ce9244d
+I (569) wifi:wifi certification version: v7.0
+I (569) wifi:config NVS flash: enabled
+I (569) wifi:config nano formating: disabled
+I (579) wifi:Init data frame dynamic rx buffer num: 32
+I (579) wifi:Init management frame dynamic rx buffer num: 32
+I (589) wifi:Init management short buffer num: 32
+I (589) wifi:Init dynamic tx buffer num: 32
+I (599) wifi:Init static rx buffer size: 1600
+I (599) wifi:Init static rx buffer num: 10
+I (599) wifi:Init dynamic rx buffer num: 32
+[0;32mI (609) wifi_init: rx ba win: 6[0m
+[0;32mI (609) wifi_init: tcpip mbox: 32[0m
+[0;32mI (609) wifi_init: udp mbox: 6[0m
+[0;32mI (619) wifi_init: tcp mbox: 6[0m
+[0;32mI (619) wifi_init: tcp tx win: 5744[0m
+[0;32mI (629) wifi_init: tcp rx win: 5744[0m
+[0;32mI (629) wifi_init: tcp mss: 1440[0m
+[0;32mI (629) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (639) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (639) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (749) wifi:mode : sta (0c:8b:95:95:cf:b0)
+I (749) wifi:enable tsf
+E (749) wifi:failed to post WiFi event=2 ret=259
+Start scanning...E (6159) wifi:failed to post WiFi event=1 ret=259
+ completed!
+Found 70 access points:
+               SSID              | Channel | RSSI |   MAC 
+
+Enclave MoveIn Temporary Network |      11 |  
+           [0;31mE (6249) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     The Enclave WiFi |      11 |  
+       [0;31mE (6259) task_wdt: esp_task_wdt_reset(783): task not found[0m
+        J-304@The_enclave |      11 |  
+   [0;31mE (6269) task_wdt: esp_task_wdt_reset(783): task not found[0m
+               Enclave Temp B |      11 |  [0;31mE (6279) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+                                 |       1 [0;31mE (6289) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|  
+                The Enclave WiFi |      [0;31mE (6299) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 1 |  
+               J-204@The_enclave |  [0;31mE (6309) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     1 |  
+Enclave MoveIn Temporary Network[0;31mE (6319) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |       1 |  
+Enclave MoveIn Temporary Net[0;31mE (6329) task_wdt: esp_task_wdt_reset(783): task not found[0m
+work |       4 |  
+               J-104@The[0;31mE (6339) task_wdt: esp_task_wdt_reset(783): task not found[0m
+_enclave |       4 |  
+                The E[0;31mE (6349) task_wdt: esp_task_wdt_reset(783): task not found[0m
+nclave WiFi |       4 |  
+               J-[0;31mE (6359) task_wdt: esp_task_wdt_reset(783): task not found[0m
+205@The_enclave |       8 |  
+             [0;31mE (6369) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   The Enclave WiFi |       8 |  
+         [0;31mE (6379) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       The Enclave WiFi |      11 |  
+     [0;31mE (6389) task_wdt: esp_task_wdt_reset(783): task not found[0m
+          J-305@The_enclave |      11 |  
+En[0;31mE (6399) task_wdt: esp_task_wdt_reset(783): task not found[0m
+clave MoveIn Temporary Network |      11 |  [0;31mE (6409) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+                      J 306 Temp |      11[0;31mE (6419) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |  
+             no stinkies allowed |    [0;31mE (6429) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   3 |  
+Enclave MoveIn Temporary Network |[0;31mE (6439) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       8 |  
+                      SETUP-122[0;31mE (6449) task_wdt: esp_task_wdt_reset(783): task not found[0m
+4 |       6 |  
+                           [0;31mE (6459) task_wdt: esp_task_wdt_reset(783): task not found[0m
+      |       6 |  
+                       [0;31mE (6469) task_wdt: esp_task_wdt_reset(783): task not found[0m
+          |       6 |  
+Enclave MoveIn Temp[0;31mE (6479) task_wdt: esp_task_wdt_reset(783): task not found[0m
+orary Network |       1 |  
+       TP-LINK_[0;31mE (6489) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Smart Plug_A985_G |       6 |  
+            [0;31mE (6499) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                     |       6 |  
+        [0;31mE (6509) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                         |       6 |  
+Encl[0;31mE (6519) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ave MoveIn Temporary Network |       8 |  
+[0;31mE (6529) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                The Enclave WiFi |       1 |[0;31mE (6539) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  
+Enclave MoveIn Temporary Network |       [0;31mE (6549) task_wdt: esp_task_wdt_reset(783): task not found[0m
+8 |  
+                          J-203T |   [0;31mE (6559) task_wdt: esp_task_wdt_reset(783): task not found[0m
+    1 |  
+                The Enclave WiFi [0;31mE (6569) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|       8 |  
+                The Enclave W[0;31mE (6579) task_wdt: esp_task_wdt_reset(783): task not found[0m
+iFi |       1 |  
+               J-103@The_[0;31mE (6589) task_wdt: esp_task_wdt_reset(783): task not found[0m
+enclave |       1 |  
+Enclave MoveIn Tempora[0;31mE (6599) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ry Network |       8 |  
+                Th[0;31mE (6609) task_wdt: esp_task_wdt_reset(783): task not found[0m
+e Enclave WiFi |       8 |  
+              [0;31mE (6619) task_wdt: esp_task_wdt_reset(783): task not found[0m
+        I-209@TEMP |      11 |  
+          [0;31mE (6629) task_wdt: esp_task_wdt_reset(783): task not found[0m
+            I-207 Temp |      11 |  
+Enclav[0;31mE (6639) task_wdt: esp_task_wdt_reset(783): task not found[0m
+e MoveIn Temporary Network |       1 |  
+Enc[0;31mE (6649) task_wdt: esp_task_wdt_reset(783): task not found[0m
+lave MoveIn Temporary Network |       6 |  [0;31mE (6659) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+                       I-310temp |      11 [0;31mE (6669) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|  
+Enclave MoveIn Temporary Network |     [0;31mE (6679) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 11 |  
+Enclave MoveIn Temporary Network | [0;31mE (6689) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     11 |  
+                The Enclave WiFi[0;31mE (6699) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |       4 |  
+Enclave MoveIn Temporary Net[0;31mE (6709) task_wdt: esp_task_wdt_reset(783): task not found[0m
+work |       8 |  
+Enclave MoveIn Temporary[0;31mE (6719) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ Network |       8 |  
+                The [0;31mE (6729) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Enclave WiFi |      11 |  
+                [0;31mE (6739) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       I-310temp |       1 |  
+Enclave MoveI[0;31mE (6749) task_wdt: esp_task_wdt_reset(783): task not found[0m
+n Temporary Network |       4 |  
+         [0;31mE (6759) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       The Enclave WiFi |       6 |  
+     [0;31mE (6769) task_wdt: esp_task_wdt_reset(783): task not found[0m
+          H-207@The_enclave |       8 |  
+E[0;31mE (6779) task_wdt: esp_task_wdt_reset(783): task not found[0m
+nclave MoveIn Temporary Network |       8 | [0;31mE (6789) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 
+Enclave MoveIn Temporary Network |       8[0;31mE (6799) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |  
+Enclave MoveIn Temporary Network |    [0;31mE (6809) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  11 |  
+                       I-310temp |[0;31mE (6819) task_wdt: esp_task_wdt_reset(783): task not found[0m
+      11 |  
+Enclave MoveIn Temporary Netwo[0;31mE (6829) task_wdt: esp_task_wdt_reset(783): task not found[0m
+rk |      11 |  
+               I-307@The_en[0;31mE (6839) task_wdt: esp_task_wdt_reset(783): task not found[0m
+clave |      11 |  
+                The En3[0;31mE (6849) task_wdt: esp_task_wdt_reset(783): task not found[0m
+876e WiFi |       1 |  
+                   [0;31mE (6859) task_wdt: esp_task_wdt_reset(783): task not found[0m
+        H-783 |     128 |  
+               [0;31mE (6869) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                  |       0 |  
+           [0;31mE (6879) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                      |      63 |  
+        [0;31mE (6889) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                         |       4 |  
+    [0;31mE (6899) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                   I-310temp |       4 |  
+[0;31mE (6909) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Enclave MoveIn TemporaP��?etwork |       4 |[0;31mE (6919) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  
+               J-105@The_enclave |      [0;31mE (6929) task_wdt: esp_task_wdt_reset(783): task not found[0m
+11 |  
+Enclave MoveIn Temporary Network |   [0;31mE (6939) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   11 |  
+Enclave MoveIn Temporary Network [0;31mE (6949) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|       1 |  
+Enclave MoveIn Temporary Netw[0;31mE (6959) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ork |       1 |  
+Enclave MoveIn Temporary [0;31mE (6969) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Network |       4 |  
+Enclave MoveIn Tempor[0;31mE (6979) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ary Network |       8 |  
+Enclave MoveIn Tem[0;31mE (6989) task_wdt: esp_task_wdt_reset(783): task not found[0m
+porary Network |       4 |  
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Guru Meditation Error: Core  0 panic'ed (Double exception). 
+
+Core  0 register dump:
+PC      : 0x4008bb82  PS      : 0x00040436  A0      : 0x00000000  A1      : 0x3ffb96d0  
+A2      : 0x3ffb0030  A3      : 0x3ffb9710  A4      : 0x00000001  A5      : 0x3ffb9700  
+A6      : 0x00060936  A7      : 0x00040026  A8      : 0x400803c0  A9      : 0x3ffb9860  
+A10     : 0x00060636  A11     : 0x00040026  A12     : 0x3ffb9940  A13     : 0x400850ff  
+A14     : 0x00000046  A15     : 0x3ffb9284  SAR     : 0x0000000c  EXCCAUSE: 0x00000002  
+EXCVADDR: 0xffffffe0  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffff8  
+
+
+Backtrace: 0x4008bb7f:0x3ffb96d0
+
+
+
+
+ELF file SHA256: 4fb48dc3528d62fc
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 271414342, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 31 2023 16:43:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e950h (125264) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0002e978 vaddr=3ffb0000 size=016a0h (  5792) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=79c34h (498740) map[0m
+[0;32mI (336) esp_image: segment 3: paddr=000a9c5c vaddr=3ffb16a0 size=02018h (  8216) load[0m
+[0;32mI (339) esp_image: segment 4: paddr=000abc7c vaddr=40080000 size=15574h ( 87412) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu up.[0m
+[0;32mI (401) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (388) cpu_start: App cpu up.[0m
+[0;32mI (419) cpu_start: Pro cpu start user code[0m
+[0;32mI (419) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (419) cpu_start: Application information:[0m
+[0;32mI (423) cpu_start: Project name:     wifi[0m
+[0;32mI (428) cpu_start: App version:      v5.1.1[0m
+[0;32mI (433) cpu_start: Compile time:     Oct 31 2023 16:43:40[0m
+[0;32mI (439) cpu_start: ELF file SHA256:  4fb48dc3528d62fc...[0m
+[0;32mI (445) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (450) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (455) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (460) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (464) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (472) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (478) heap_init: At 3FFB7738 len 000288C8 (162 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 40095574 len 0000AA8C (42 KiB): IRAM[0m
+[0;32mI (504) spi_flash: detected chip: generic[0m
+[0;32mI (507) spi_flash: flash io: dio[0m
+[0;33mW (511) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (525) app_start: Starting scheduler on CPU0[0m
+[0;32mI (530) app_start: Starting scheduler on CPU1[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+I (570) wifi:wifi driver task: 3ffbe330, prio:23, stack:6656, core=0
+I (570) wifi:wifi firmware version: ce9244d
+I (570) wifi:wifi certification version: v7.0
+I (570) wifi:config NVS flash: enabled
+I (570) wifi:config nano formating: disabled
+I (580) wifi:Init data frame dynamic rx buffer num: 32
+I (580) wifi:Init management frame dynamic rx buffer num: 32
+I (590) wifi:Init management short buffer num: 32
+I (590) wifi:Init dynamic tx buffer num: 32
+I (600) wifi:Init static rx buffer size: 1600
+I (600) wifi:Init static rx buffer num: 10
+I (600) wifi:Init dynamic rx buffer num: 32
+[0;32mI (610) wifi_init: rx ba win: 6[0m
+[0;32mI (610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (610) wifi_init: udp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp tx win: 5744[0m
+[0;32mI (630) wifi_init: tcp rx win: 5744[0m
+[0;32mI (630) wifi_init: tcp mss: 1440[0m
+[0;32mI (630) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (640) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (640) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (750) wifi:mode : sta (0c:8b:95:95:cf:b0)
+I (750) wifi:enable tsf
+E (750) wifi:failed to post WiFi event=2 ret=259
+Start scanning...E (6160) wifi:failed to post WiFi event=1 ret=259
+ completed!
+Found 66 access points:
+               SSID              | Channel | RSSI |   MAC 
+
+Enclave MoveIn Temporary Network |      11 |  
+                The Enclave WiFi |      11 |  
+                  Enclave Temp B |      11 |  
+               J-304@The_enclave |      11 |  
+                                 |       1 |  
+                The Enclave WiFi |       1 |  
+               J-204@The_enclave |       1 |  
+Enclave MoveIn Temporary Network |       1 |  
+Enclave MoveIn Temporary Network |       4 |  
+                The Enclave WiFi |       4 |  
+               J-104@The_enclave |       4 |  
+               J-205@The_enclave |       8 |  
+                The Enclave WiFi |      11 |  
+               J-305@The_enclave |      11 |  
+                The Enclave WiFi |       8 |  
+                      J 306 Temp |      11 |  
+Enclave MoveIn Temporary Network |       8 |  
+             no stinkies allowed |       3 |  
+Enclave MoveIn Temporary Network |       1 |  
+Enclave MoveIn Temporary Network |      11 |  
+       TP-LINK_Smart Plug_A985_G |       6 |  
+                      SETUP-1224 |       6 |  
+                                 |       6 |  
+                                 |       6 |  
+                                 |       6 |  
+                                 |       6 |  
+                       NETGEAR83 |       4 |  
+                                 |       1 |  
+                The Enclave WiFi |       1 |  
+                The Enclave WiFi |       1 |  
+                          J-203T |       1 |  
+Enclave MoveIn Temporary Network |       8 |  
+                The Enclave WiFi |       8 |  
+                      I-209@TEMP |      11 |  
+               I-309@The_enclave |       1 |  
+                       I-310temp |      11 |  
+                                 |      11 |  
+Enclave MoveIn Temporary Network |       6 |  
+Enclave MoveIn Temporary Network |       8 |  
+Enclave MoveIn Temporary Network |       1 |  
+                The Enclave WiFi |       4 |  
+               H-204@The_enclave |       4 |  
+Enclave MoveIn Temporary Network |       8 |  
+Enclave MoveIn Temporary Network |       8 |  
+Enclave MoveIn Temporary Network |      11 |  
+Enclave MoveIn Temporary Network |      11 |  
+   DIRECT-B2-HP ENVY 5000 series |       4 |  
+Enclave MoveIn Temporary Network |       4 |  
+                The Enclave WiFi |       8 |  
+               I-108@The_enclave |       8 |  
+Enclave MoveIn Temporary Network |       8 |  
+                The Enclave WiFi |       8 |  
+                The Enclave WiFi |      11 |  
+                The Enclave WiFi |      11 |  
+                       I-310temp |       1 |  
+                       I-310temp |       8 |  
+               H-308@The_enclave |       8 |  
+   Enclave MoveIn Tem�*@6z@0 |     128 |  
+                             �? |       0 |  
+                                 |      63 |  
+                                 |       4 |  
+Enclave MoveIn Temporary Network |       8 |  
+Enclave MoveIn TemporaP��?etwork |      11 |  
+Enclave MoveIn Temporary Network |       1 |  
+                                 |       2 |  
+               LEISURE470-356652 |       6 |  
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Guru Meditation Error: Core  0 panic'ed (Double exception). 
+
+Core  0 register dump:
+PC      : 0x4008bb82  PS      : 0x00040436  A0      : 0x00000000  A1      : 0x3ffb96d0  
+A2      : 0x3ffb0030  A3      : 0x3ffb9710  A4      : 0x00000001  A5      : 0x3ffb9700  
+A6      : 0x00060936  A7      : 0x00040026  A8      : 0x400803c0  A9      : 0x3ffb9860  
+A10     : 0x00060636  A11     : 0x00040026  A12     : 0x3ffb9940  A13     : 0x400850ff  
+A14     : 0x00000042  A15     : 0x3ffb9284  SAR     : 0x0000000c  EXCCAUSE: 0x00000002  
+EXCVADDR: 0xffffffe0  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffffb  
+
+
+Backtrace: 0x4008bb7f:0x3ffb96d0
+
+
+
+
+ELF file SHA256: 4fb48dc3528d62fc
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 271414342, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 31 2023 16:43:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e950h (125264) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0002e978 vaddr=3ffb0000 size=016a0h (  5792) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=79c34h (498740) map[0m
+[0;32mI (336) esp_image: segment 3: paddr=000a9c5c vaddr=3ffb16a0 size=02018h (  8216) load[0m
+[0;32mI (339) esp_image: segment 4: paddr=000abc7c vaddr=40080000 size=15574h ( 87412) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu up.[0m
+[0;32mI (401) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (388) cpu_start: App cpu up.[0m
+[0;32mI (419) cpu_start: Pro cpu start user code[0m
+[0;32mI (419) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (419) cpu_start: Application information:[0m
+[0;32mI (423) cpu_start: Project name:     wifi[0m
+[0;32mI (428) cpu_start: App version:      v5.1.1[0m
+[0;32mI (433) cpu_start: Compile time:     Oct 31 2023 16:43:40[0m
+[0;32mI (439) cpu_start: ELF file SHA256:  4fb48dc3528d62fc...[0m
+[0;32mI (445) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (450) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (455) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (460) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (464) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (472) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (478) heap_init: At 3FFB7738 len 000288C8 (162 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 40095574 len 0000AA8C (42 KiB): IRAM[0m
+[0;32mI (504) spi_flash: detected chip: generic[0m
+[0;32mI (507) spi_flash: flash io: dio[0m
+[0;33mW (511) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (525) app_start: Starting scheduler on CPU0[0m
+[0;32mI (530) app_start: Starting scheduler on CPU1[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+I (570) wifi:wifi driver task: 3ffbe330, prio:23, stack:6656, core=0
+I (570) wifi:wifi firmware version: ce9244d
+I (570) wifi:wifi certification version: v7.0
+I (570) wifi:config NVS flash: enabled
+I (570) wifi:config nano formating: disabled
+I (580) wifi:Init data frame dynamic rx buffer num: 32
+I (580) wifi:Init management frame dynamic rx buffer num: 32
+I (590) wifi:Init management short buffer num: 32
+I (590) wifi:Init dynamic tx buffer num: 32
+I (600) wifi:Init static rx buffer size: 1600
+I (600) wifi:Init static rx buffer num: 10
+I (600) wifi:Init dynamic rx buffer num: 32
+[0;32mI (610) wifi_init: rx ba win: 6[0m
+[0;32mI (610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (610) wifi_init: udp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp tx win: 5744[0m
+[0;32mI (630) wifi_init: tcp rx win: 5744[0m
+[0;32mI (630) wifi_init: tcp mss: 1440[0m
+[0;32mI (630) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (640) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (640) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (750) wifi:mode : sta (0c:8b:95:95:cf:b0)
+I (750) wifi:enable tsf
+E (750) wifi:failed to post WiFi event=2 ret=259
+Start scanning...E (6160) wifi:failed to post WiFi event=1 ret=259
+ completed!
+Found 67 access points:
+               SSID              | Channel | RSSI |   MAC 
+
+Enclave MoveIn Temporary Network |      11 |  
+           [0;31mE (6250) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       Enclave Temp B |      11 |  
+       [0;31mE (6260) task_wdt: esp_task_wdt_reset(783): task not found[0m
+         The Enclave WiFi |      11 |  
+   [0;31mE (6270) task_wdt: esp_task_wdt_reset(783): task not found[0m
+            J-304@The_enclave |      11 |  [0;31mE (6280) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+                                 |       1 [0;31mE (6290) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|  
+               J-204@The_enclave |      [0;31mE (6300) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 1 |  
+                The Enclave WiFi |  [0;31mE (6310) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     1 |  
+Enclave MoveIn Temporary Network[0;31mE (6320) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |       1 |  
+Enclave MoveIn Temporary Net[0;31mE (6330) task_wdt: esp_task_wdt_reset(783): task not found[0m
+work |       4 |  
+                The Encl[0;31mE (6340) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ave WiFi |       4 |  
+               J-104@[0;31mE (6350) task_wdt: esp_task_wdt_reset(783): task not found[0m
+The_enclave |       4 |  
+               J-[0;31mE (6360) task_wdt: esp_task_wdt_reset(783): task not found[0m
+205@The_enclave |       8 |  
+Enclave MoveI[0;31mE (6370) task_wdt: esp_task_wdt_reset(783): task not found[0m
+n Temporary Network |       8 |  
+         [0;31mE (6380) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       The Enclave WiFi |      11 |  
+     [0;31mE (6390) task_wdt: esp_task_wdt_reset(783): task not found[0m
+          J-305@The_enclave |      11 |  
+  [0;31mE (6400) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                    J 306 Temp |      11 |  [0;31mE (6410) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+                The Enclave WiFi |       8[0;31mE (6420) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |  
+Enclave MoveIn Temporary Network |    [0;31mE (6430) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  11 |  
+       TP-LINK_Smart Plug_A985_G |[0;31mE (6440) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       6 |  
+                               [0;31mE (6450) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  |       6 |  
+                      SETUP[0;31mE (6460) task_wdt: esp_task_wdt_reset(783): task not found[0m
+-1224 |       6 |  
+                       [0;31mE (6470) task_wdt: esp_task_wdt_reset(783): task not found[0m
+          |       6 |  
+                   [0;31mE (6480) task_wdt: esp_task_wdt_reset(783): task not found[0m
+              |       6 |  
+               [0;31mE (6490) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                  |       6 |  
+            [0;31mE (6500) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                     |       1 |  
+Enclave [0;31mE (6510) task_wdt: esp_task_wdt_reset(783): task not found[0m
+MoveIn Temporary Network |       8 |  
+Encl[0;31mE (6520) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ave MoveIn Temporary Network |      11 |  
+[0;31mE (6530) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                       I-310temp |      11 |[0;31mE (6540) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  
+                The Enclave WiFi |       [0;31mE (6550) task_wdt: esp_task_wdt_reset(783): task not found[0m
+1 |  
+   DIRECT-7E-HP ENVY 5000 series |   [0;31mE (6560) task_wdt: esp_task_wdt_reset(783): task not found[0m
+    6 |  
+               I-308@The_enclave [0;31mE (6570) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|       8 |  
+                The Enclave W[0;31mE (6580) task_wdt: esp_task_wdt_reset(783): task not found[0m
+iFi |       1 |  
+                  Enclave[0;31mE (6590) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ Temp A |       1 |  
+                  Encl[0;31mE (6600) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ave Temp A |       8 |  
+Enclave MoveIn Tem[0;31mE (6610) task_wdt: esp_task_wdt_reset(783): task not found[0m
+porary Network |       4 |  
+              [0;31mE (6620) task_wdt: esp_task_wdt_reset(783): task not found[0m
+         NETGEAR83 |       4 |  
+          [0;31mE (6630) task_wdt: esp_task_wdt_reset(783): task not found[0m
+             I-310temp |       8 |  
+      [0;31mE (6640) task_wdt: esp_task_wdt_reset(783): task not found[0m
+          The Enclave WiFi |       8 |  
+Enc[0;31mE (6650) task_wdt: esp_task_wdt_reset(783): task not found[0m
+lave MoveIn Temporary Network |       8 |  [0;31mE (6660) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+Enclave MoveIn Temporary Network |      11 [0;31mE (6670) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|  
+                  Enclave Temp A |     [0;31mE (6680) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  8 |  
+               H-306@The_enclave | [0;31mE (6690) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     11 |  
+Enclave MoveIn Temporary Network[0;31mE (6700) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |      11 |  
+                      I-207 [0;31mE (6710) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Temp |      11 |  
+Enclave MoveIn Temporary[0;31mE (6720) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ Network |       1 |  
+                The [0;31mE (6730) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Enclave WiFi |       4 |  
+Enclave MoveIn T[0;31mE (6740) task_wdt: esp_task_wdt_reset(783): task not found[0m
+emporary Network |       8 |  
+             [0;31mE (6750) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   The Enclave WiFi |       8 |  
+Enclave M[0;31mE (6760) task_wdt: esp_task_wdt_reset(783): task not found[0m
+oveIn Temporary Network |       8 |  
+     [0;31mE (6770) task_wdt: esp_task_wdt_reset(783): task not found[0m
+           The Enclave WiFi |      11 |  
+E[0;31mE (6780) task_wdt: esp_task_wdt_reset(783): task not found[0m
+nclave MoveIn Temporary Network |      11 | [0;31mE (6790) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 
+Enclave MoveIn Temporary Network |       1[0;31mE (6800) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |  
+                The Enclave WiFi |    [0;31mE (6810) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   1 |  
+Enclave MoveIn Temporary Network |[0;31mE (6820) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       1 |  
+   DIRECT-B2-HP ENVY 5000 seri[0;31mE (6830) task_wdt: esp_task_wdt_reset(783): task not found[0m
+es |       4 |  
+Enclave MoveIn Temporary Ne[0;31mE (6840) task_wdt: esp_task_wdt_reset(783): task not found[0m
+twork |       4 |  
+               I-310@38[0;31mE (6850) task_wdt: esp_task_wdt_reset(783): task not found[0m
+76enclave |      11 |  
+                   [0;31mE (6860) task_wdt: esp_task_wdt_reset(783): task not found[0m
+        En783 |     128 |  
+               [0;31mE (6870) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                  |       0 |  
+           [0;31mE (6880) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                      |      63 |  
+        [0;31mE (6890) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                         |       1 |  
+Encl[0;31mE (6900) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ave MoveIn Temporary Network |       1 |  
+[0;31mE (6910) task_wdt: esp_task_wdt_reset(783): task not found[0m
+               H-106@The_enclave |       4 |[0;31mE (6920) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  
+               I-108@The_enclave |      [0;31mE (6930) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 8 |  
+Enclave MoveIn Temporary Network |   [0;31mE (6940) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   11 |  
+                                 [0;31mE (6950) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|       2 |  
+           eufy RoboVac 25C-8[0;31mE (6960) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ECE |       1 |  
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Guru Meditation Error: Core  0 panic'ed (Double exception). 
+
+Core  0 register dump:
+PC      : 0x4008bb82  PS      : 0x00040436  A0      : 0x00000000  A1      : 0x3ffb96d0  
+A2      : 0x3ffb0030  A3      : 0x3ffb9710  A4      : 0x00000001  A5      : 0x3ffb9700  
+A6      : 0x00060936  A7      : 0x00040026  A8      : 0x400803c0  A9      : 0x3ffb9860  
+A10     : 0x00060636  A11     : 0x00040026  A12     : 0x3ffb9940  A13     : 0x400850ff  
+A14     : 0x00000043  A15     : 0x3ffb9284  SAR     : 0x0000000c  EXCCAUSE: 0x00000002  
+EXCVADDR: 0xffffffe0  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4008bb7f:0x3ffb96d0
+
+
+
+
+ELF file SHA256: 4fb48dc3528d62fc
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 271414342, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 31 2023 16:43:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e950h (125264) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0002e978 vaddr=3ffb0000 size=016a0h (  5792) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=79c34h (498740) map[0m
+[0;32mI (336) esp_image: segment 3: paddr=000a9c5c vaddr=3ffb16a0 size=02018h (  8216) load[0m
+[0;32mI (339) esp_image: segment 4: paddr=000abc7c vaddr=40080000 size=15574h ( 87412) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu up.[0m
+[0;32mI (401) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (388) cpu_start: App cpu up.[0m
+[0;32mI (419) cpu_start: Pro cpu start user code[0m
+[0;32mI (419) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (419) cpu_start: Application information:[0m
+[0;32mI (423) cpu_start: Project name:     wifi[0m
+[0;32mI (428) cpu_start: App version:      v5.1.1[0m
+[0;32mI (433) cpu_start: Compile time:     Oct 31 2023 16:43:40[0m
+[0;32mI (439) cpu_start: ELF file SHA256:  4fb48dc3528d62fc...[0m
+[0;32mI (445) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (450) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (455) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (460) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (464) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (472) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (478) heap_init: At 3FFB7738 len 000288C8 (162 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 40095574 len 0000AA8C (42 KiB): IRAM[0m
+[0;32mI (504) spi_flash: detected chip: generic[0m
+[0;32mI (507) spi_flash: flash io: dio[0m
+[0;33mW (511) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (525) app_start: Starting scheduler on CPU0[0m
+[0;32mI (530) app_start: Starting scheduler on CPU1[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+I (570) wifi:wifi driver task: 3ffbe330, prio:23, stack:6656, core=0
+I (570) wifi:wifi firmware version: ce9244d
+I (570) wifi:wifi certification version: v7.0
+I (570) wifi:config NVS flash: enabled
+I (570) wifi:config nano formating: disabled
+I (580) wifi:Init data frame dynamic rx buffer num: 32
+I (580) wifi:Init management frame dynamic rx buffer num: 32
+I (590) wifi:Init management short buffer num: 32
+I (590) wifi:Init dynamic tx buffer num: 32
+I (600) wifi:Init static rx buffer size: 1600
+I (600) wifi:Init static rx buffer num: 10
+I (600) wifi:Init dynamic rx buffer num: 32
+[0;32mI (610) wifi_init: rx ba win: 6[0m
+[0;32mI (610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (610) wifi_init: udp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp tx win: 5744[0m
+[0;32mI (630) wifi_init: tcp rx win: 5744[0m
+[0;32mI (630) wifi_init: tcp mss: 1440[0m
+[0;32mI (630) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (640) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (640) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (750) wifi:mode : sta (0c:8b:95:95:cf:b0)
+I (750) wifi:enable tsf
+E (750) wifi:failed to post WiFi event=2 ret=259
+Start scanning...E (6160) wifi:failed to post WiFi event=1 ret=259
+ completed!
+Found 71 access points:
+               SSID              | Channel | RSSI |   MAC 
+
+Enclave MoveIn Temporary Network |      11 |  
+           [0;31mE (6250) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     The Enclave WiFi |      11 |  
+       [0;31mE (6260) task_wdt: esp_task_wdt_reset(783): task not found[0m
+        J-304@The_enclave |      11 |  
+   [0;31mE (6270) task_wdt: esp_task_wdt_reset(783): task not found[0m
+               Enclave Temp B |      11 |  [0;31mE (6280) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+                The Enclave WiFi |       1 [0;31mE (6290) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|  
+               J-204@The_enclave |      [0;31mE (6300) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 1 |  
+Enclave MoveIn Temporary Network |  [0;31mE (6310) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     1 |  
+Enclave MoveIn Temporary Network[0;31mE (6320) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |       4 |  
+                The Enclave [0;31mE (6330) task_wdt: esp_task_wdt_reset(783): task not found[0m
+WiFi |       4 |  
+               J-104@The[0;31mE (6340) task_wdt: esp_task_wdt_reset(783): task not found[0m
+_enclave |       4 |  
+               J-305@[0;31mE (6350) task_wdt: esp_task_wdt_reset(783): task not found[0m
+The_enclave |      11 |  
+                T[0;31mE (6360) task_wdt: esp_task_wdt_reset(783): task not found[0m
+he Enclave WiFi |       8 |  
+             [0;31mE (6370) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  J-205@The_enclave |       8 |  
+         [0;31mE (6380) task_wdt: esp_task_wdt_reset(783): task not found[0m
+             J 306 Temp |      11 |  
+Encla[0;31mE (6390) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ve MoveIn Temporary Network |       8 |  
+  [0;31mE (6400) task_wdt: esp_task_wdt_reset(783): task not found[0m
+              The Enclave WiFi |      11 |  [0;31mE (6410) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+Enclave MoveIn Temporary Network |       1[0;31mE (6420) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |  
+       TP-LINK_Smart Plug_A985_G |    [0;31mE (6430) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   6 |  
+                      SETUP-1224 |[0;31mE (6440) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       6 |  
+                               [0;31mE (6450) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  |       6 |  
+                           [0;31mE (6460) task_wdt: esp_task_wdt_reset(783): task not found[0m
+      |       6 |  
+                       [0;31mE (6470) task_wdt: esp_task_wdt_reset(783): task not found[0m
+          |       6 |  
+                   [0;31mE (6480) task_wdt: esp_task_wdt_reset(783): task not found[0m
+              |       6 |  
+Enclave MoveIn [0;31mE (6490) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Temporary Network |       8 |  
+            [0;31mE (6500) task_wdt: esp_task_wdt_reset(783): task not found[0m
+           I-310temp |       8 |  
+        [0;31mE (6510) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     no stinkies allowed |       3 |  
+    [0;31mE (6520) task_wdt: esp_task_wdt_reset(783): task not found[0m
+            The Enclave WiFi |       1 |  
+[0;31mE (6530) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                  Enclave Temp A |       8 |[0;31mE (6540) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  
+               J-103@The_enclave |       [0;31mE (6550) task_wdt: esp_task_wdt_reset(783): task not found[0m
+1 |  
+                          J-203T |   [0;31mE (6560) task_wdt: esp_task_wdt_reset(783): task not found[0m
+    1 |  
+               I-309@The_enclave [0;31mE (6570) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|       1 |  
+                  Enclave Tem[0;31mE (6580) task_wdt: esp_task_wdt_reset(783): task not found[0m
+p A |       1 |  
+                       NE[0;31mE (6590) task_wdt: esp_task_wdt_reset(783): task not found[0m
+TGEAR83 |       4 |  
+                The En[0;31mE (6600) task_wdt: esp_task_wdt_reset(783): task not found[0m
+clave WiFi |       8 |  
+Enclave MoveIn Tem[0;31mE (6610) task_wdt: esp_task_wdt_reset(783): task not found[0m
+porary Network |       6 |  
+              [0;31mE (6620) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ I-108@The_enclave |       8 |  
+Enclave Mo[0;31mE (6630) task_wdt: esp_task_wdt_reset(783): task not found[0m
+veIn Temporary Network |      11 |  
+Enclav[0;31mE (6640) task_wdt: esp_task_wdt_reset(783): task not found[0m
+e MoveIn Temporary Network |       1 |  
+   [0;31mE (6650) task_wdt: esp_task_wdt_reset(783): task not found[0m
+DIRECT-B2-HP ENVY 5000 series |       4 |  [0;31mE (6660) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+Enclave MoveIn Temporary Network |       4 [0;31mE (6670) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|  
+               I-308@The_enclave |     [0;31mE (6680) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  8 |  
+Enclave MoveIn Temporary Network | [0;31mE (6690) task_wdt: esp_task_wdt_reset(783): task not found[0m
+      8 |  
+Enclave MoveIn Temporary Network[0;31mE (6700) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |      11 |  
+Enclave MoveIn Temporary Net[0;31mE (6710) task_wdt: esp_task_wdt_reset(783): task not found[0m
+work |      11 |  
+           eufy RoboVac [0;31mE (6720) task_wdt: esp_task_wdt_reset(783): task not found[0m
+25C-8ECE |       1 |  
+                The [0;31mE (6730) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Enclave WiFi |       8 |  
+                [0;31mE (6740) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  Enclave Temp A |       8 |  
+             [0;31mE (6750) task_wdt: esp_task_wdt_reset(783): task not found[0m
+         I-209@TEMP |      11 |  
+Enclave M[0;31mE (6760) task_wdt: esp_task_wdt_reset(783): task not found[0m
+oveIn Temporary Network |      11 |  
+     [0;31mE (6770) task_wdt: esp_task_wdt_reset(783): task not found[0m
+          H-304@The_enclave |       1 |  
+E[0;31mE (6780) task_wdt: esp_task_wdt_reset(783): task not found[0m
+nclave MoveIn Temporary Network |       8 | [0;31mE (6790) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 
+Enclave MoveIn Temporary Network |       8[0;31mE (6800) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |  
+Enclave MoveIn Temporary Network |    [0;31mE (6810) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   1 |  
+                The Enclave WiFi |[0;31mE (6820) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       1 |  
+Enclave MoveIn Temporary Netwo[0;31mE (6830) task_wdt: esp_task_wdt_reset(783): task not found[0m
+rk |       1 |  
+Enclave MoveIn Temporary N[0;31mE (6840) task_wdt: esp_task_wdt_reset(783): task not found[0m
+etwork |       1 |  
+Enclav3876veIn Temporar[0;31mE (6850) task_wdt: esp_task_wdt_reset(783): task not found[0m
+y Network |       8 |  
+                   [0;31mE (6860) task_wdt: esp_task_wdt_reset(783): task not found[0m
+        I-783 |     128 |  
+               [0;31mE (6870) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                  |       0 |  
+           [0;31mE (6880) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                      |      63 |  
+        [0;31mE (6890) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                         |       8 |  
+    [0;31mE (6900) task_wdt: esp_task_wdt_reset(783): task not found[0m
+            The Enclave WiFi |       8 |  
+[0;31mE (6910) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                         J-102 T |      11 |[0;31mE (6920) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  
+                The Enclave WiFi |      [0;31mE (6930) task_wdt: esp_task_wdt_reset(783): task not found[0m
+11 |  
+                The Enclave WiFi |   [0;31mE (6940) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   11 |  
+Enclave MoveIn Temporary Network [0;31mE (6950) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|      11 |  
+Enclave MoveIn Temporary Netw[0;31mE (6960) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ork |      11 |  
+Enclave MoveIn Temporary [0;31mE (6970) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Network |       1 |  
+Enclave MoveIn Tempor[0;31mE (6980) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ary Network |       4 |  
+Enclave MoveIn Tem[0;31mE (6990) task_wdt: esp_task_wdt_reset(783): task not found[0m
+porary Network |       9 |  
+Enclave MoveIn[0;31mE (7000) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ Temporary Network |       4 |  
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Guru Meditation Error: Core  0 panic'ed (Double exception). 
+
+Core  0 register dump:
+PC      : 0x4008bb82  PS      : 0x00040436  A0      : 0x00000000  A1      : 0x3ffb96d0  
+A2      : 0x3ffb0030  A3      : 0x3ffb9710  A4      : 0x00000001  A5      : 0x3ffb9700  
+A6      : 0x00060936  A7      : 0x00040026  A8      : 0x400803c0  A9      : 0x3ffb9860  
+A10     : 0x00060636  A11     : 0x00040026  A12     : 0x3ffb9940  A13     : 0x400850ff  
+A14     : 0x00000047  A15     : 0x3ffb9284  SAR     : 0x0000000c  EXCCAUSE: 0x00000002  
+EXCVADDR: 0xffffffe0  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffff8  
+
+
+Backtrace: 0x4008bb7f:0x3ffb96d0
+
+
+
+
+ELF file SHA256: 4fb48dc3528d62fc
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 271414342, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 31 2023 16:43:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e950h (125264) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0002e978 vaddr=3ffb0000 size=016a0h (  5792) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=79c34h (498740) map[0m
+[0;32mI (336) esp_image: segment 3: paddr=000a9c5c vaddr=3ffb16a0 size=02018h (  8216) load[0m
+[0;32mI (339) esp_image: segment 4: paddr=000abc7c vaddr=40080000 size=15574h ( 87412) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu up.[0m
+[0;32mI (401) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (388) cpu_start: App cpu up.[0m
+[0;32mI (419) cpu_start: Pro cpu start user code[0m
+[0;32mI (419) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (419) cpu_start: Application information:[0m
+[0;32mI (423) cpu_start: Project name:     wifi[0m
+[0;32mI (428) cpu_start: App version:      v5.1.1[0m
+[0;32mI (433) cpu_start: Compile time:     Oct 31 2023 16:43:40[0m
+[0;32mI (439) cpu_start: ELF file SHA256:  4fb48dc3528d62fc...[0m
+[0;32mI (445) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (450) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (455) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (460) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (464) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (472) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (478) heap_init: At 3FFB7738 len 000288C8 (162 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 40095574 len 0000AA8C (42 KiB): IRAM[0m
+[0;32mI (504) spi_flash: detected chip: generic[0m
+[0;32mI (507) spi_flash: flash io: dio[0m
+[0;33mW (511) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (525) app_start: Starting scheduler on CPU0[0m
+[0;32mI (530) app_start: Starting scheduler on CPU1[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+I (570) wifi:wifi driver task: 3ffbe330, prio:23, stack:6656, core=0
+I (570) wifi:wifi firmware version: ce9244d
+I (570) wifi:wifi certification version: v7.0
+I (570) wifi:config NVS flash: enabled
+I (570) wifi:config nano formating: disabled
+I (580) wifi:Init data frame dynamic rx buffer num: 32
+I (580) wifi:Init management frame dynamic rx buffer num: 32
+I (590) wifi:Init management short buffer num: 32
+I (590) wifi:Init dynamic tx buffer num: 32
+I (600) wifi:Init static rx buffer size: 1600
+I (600) wifi:Init static rx buffer num: 10
+I (600) wifi:Init dynamic rx buffer num: 32
+[0;32mI (610) wifi_init: rx ba win: 6[0m
+[0;32mI (610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (610) wifi_init: udp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp tx win: 5744[0m
+[0;32mI (630) wifi_init: tcp rx win: 5744[0m
+[0;32mI (630) wifi_init: tcp mss: 1440[0m
+[0;32mI (630) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (640) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (640) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (750) wifi:mode : sta (0c:8b:95:95:cf:b0)
+I (750) wifi:enable tsf
+E (750) wifi:failed to post WiFi event=2 ret=259
+Start scanning...E (6160) wifi:failed to post WiFi event=1 ret=259
+ completed!
+Found 73 access points:
+               SSID              | Channel | RSSI |   MAC 
+
+Enclave MoveIn Temporary Network |      11 |  
+           Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x4000c26c  PS      : 0x00060033  A0      : 0x8008a30b  A1      : 0x3ffba510  
+A2      : 0x00000000  A3      : 0x3f403830  A4      : 0x00000014  A5      : 0x00060023  
+A6      : 0xb33fffff  A7      : 0xb33fffff  A8      : 0x00000001  A9      : 0x00000000  
+A10     : 0x00000001  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3ffb2120  
+A14     : 0x3ffb3be4  A15     : 0x00060021  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4000c269:0x3ffba510 0x4008a308:0x3ffba530 0x4008b978:0x3ffba550 0x4008b92a:0x566f626f |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 4fb48dc3528d62fc
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 271414342, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 31 2023 16:43:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e950h (125264) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0002e978 vaddr=3ffb0000 size=016a0h (  5792) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=79c34h (498740) map[0m
+[0;32mI (336) esp_image: segment 3: paddr=000a9c5c vaddr=3ffb16a0 size=02018h (  8216) load[0m
+[0;32mI (339) esp_image: segment 4: paddr=000abc7c vaddr=40080000 size=15574h ( 87412) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu up.[0m
+[0;32mI (401) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (388) cpu_start: App cpu up.[0m
+[0;32mI (419) cpu_start: Pro cpu start user code[0m
+[0;32mI (419) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (419) cpu_start: Application information:[0m
+[0;32mI (423) cpu_start: Project name:     wifi[0m
+[0;32mI (428) cpu_start: App version:      v5.1.1[0m
+[0;32mI (433) cpu_start: Compile time:     Oct 31 2023 16:43:40[0m
+[0;32mI (439) cpu_start: ELF file SHA256:  4fb48dc3528d62fc...[0m
+[0;32mI (445) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (450) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (455) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (459) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (464) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (472) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (477) heap_init: At 3FFB7738 len 000288C8 (162 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 40095574 len 0000AA8C (42 KiB): IRAM[0m
+[0;32mI (504) spi_flash: detected chip: generic[0m
+[0;32mI (507) spi_flash: flash io: dio[0m
+[0;33mW (511) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (525) app_start: Starting scheduler on CPU0[0m
+[0;32mI (530) app_start: Starting scheduler on CPU1[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+I (570) wifi:wifi driver task: 3ffbe330, prio:23, stack:6656, core=0
+I (570) wifi:wifi firmware version: ce9244d
+I (570) wifi:wifi certification version: v7.0
+I (570) wifi:config NVS flash: enabled
+I (570) wifi:config nano formating: disabled
+I (580) wifi:Init data frame dynamic rx buffer num: 32
+I (580) wifi:Init management frame dynamic rx buffer num: 32
+I (590) wifi:Init management short buffer num: 32
+I (590) wifi:Init dynamic tx buffer num: 32
+I (600) wifi:Init static rx buffer size: 1600
+I (600) wifi:Init static rx buffer num: 10
+I (600) wifi:Init dynamic rx buffer num: 32
+[0;32mI (610) wifi_init: rx ba win: 6[0m
+[0;32mI (610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (610) wifi_init: udp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp tx win: 5744[0m
+[0;32mI (630) wifi_init: tcp rx win: 5744[0m
+[0;32mI (630) wifi_init: tcp mss: 1440[0m
+[0;32mI (630) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (640) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (640) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (750) wifi:mode : sta (0c:8b:95:95:cf:b0)
+I (750) wifi:enable tsf
+E (750) wifi:failed to post WiFi event=2 ret=259
+Start scanning...E (6160) wifi:failed to post WiFi event=1 ret=259
+ completed!
+Found 81 access points:
+               SSID              | Channel | RSSI |   MAC 
+
+Enclave MoveIn Temporary Network |      11 |  
+               J-304@The_enclave |      11 |  
+                The Enclave WiFi |      11 |  
+                  Enclave Temp B |      11 |  
+                                 |       1 |  
+                The Enclave WiFi |       1 |  
+               J-204@The_enclave |       1 |  
+Enclave MoveIn Temporary Network |       1 |  
+Enclave MoveIn Temporary Network |       4 |  
+                The Enclave WiFi |       4 |  
+               J-104@The_enclave |       4 |  
+                      J 306 Temp |      11 |  
+                The Enclave WiFi |       8 |  
+               J-305@The_enclave |      11 |  
+                The Enclave WiFi |      11 |  
+               J-205@The_enclave |       8 |  
+Enclave MoveIn Temporary Network |      11 |  
+Enclave MoveIn Temporary Network |       8 |  
+Enclave MoveIn Temporary Network |       8 |  
+       TP-LINK_Smart Plug_A985_G |       6 |  
+                                 |       6 |  
+                                 |       6 |  
+                                 |       6 |  
+                       I-310temp |       8 |  
+             no stinkies allowed |       3 |  
+                      SETUP-1224 |       6 |  
+                                 |       6 |  
+Enclave MoveIn Temporary Network |       1 |  
+                The Enclave WiFi |       8 |  
+               I-108@The_enclave |       8 |  
+               J-103@The_enclave |       1 |  
+               I-309@The_enclave |       1 |  
+                          J-203T |       1 |  
+Enclave MoveIn Temporary Network |       8 |  
+                The Enclave WiFi |       1 |  
+                  Enclave Temp A |       1 |  
+                       NETGEAR83 |       4 |  
+                  Enclave Temp A |       8 |  
+                The Enclave WiFi |       8 |  
+                The Enclave WiFi |       1 |  
+Enclave MoveIn Temporary Network |       6 |  
+Enclave MoveIn Temporary Network |      11 |  
+Enclave MoveIn Temporary Network |      11 |  
+Enclave MoveIn Temporary Network |       1 |  
+Enclave MoveIn Temporary Network |       1 |  
+               H-106@The_enclave |       4 |  
+                The Enclave WiFi |       4 |  
+   DIRECT-7E-HP ENVY 5000 series |       6 |  
+                      I-207 Temp |      11 |  
+           eufy RoboVac 25C-8ECE |       1 |  
+Enclave MoveIn Temporary Network |       1 |  
+                       I-310temp |       1 |  
+               H-205@The_enclave |       1 |  
+Enclave MoveIn Temporary Network |       1 |  
+Enclave MoveIn Temporary Network |       8 |  
+Enclave MoveIn Temporary Network |       8 |  
+                      I-209@TEMP |      11 |  
+                              Th |       0 |  
+                             �?� |       0 |  
+                                 |       0 |  
+                       I-310temp |      11 |  
+                           J104T |      11 |  
+               H-306@The_enclave |      11 |  
+Enclave MoveIn Temporary Network |      11 |  
+                       I-310temp |      11 |  
+                The Enclave WiFi |       1 |  
+                The Enclave WiFi |       1 |  
+Enclave MoveIn Temporary Network |       1 |  
+   DIRECT-B2-HP ENVY 5000 series |       4 |  
+               I-109@The_enclave |      11 |  
+                The Enclave WiFi |      11 |  
+Enclave MoveIn Temporary Network |       4 | ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 271414342, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (63) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (63) boot: compile time Oct 31 2023 16:43:06[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (91) boot.esp32: WDT reset info: PRO CPU PC=0x400d2042[0m
+[0;33mW (97) boot.esp32: WDT reset info: APP CPU PC=0x400850f7[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e950h (125264) map[0m
+[0;32mI (200) esp_image: segment 1: paddr=0002e978 vaddr=3ffb0000 size=016a0h (  5792) load[0m
+[0;32mI (203) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=79c34h (498740) map[0m
+[0;32mI (386) esp_image: segment 3: paddr=000a9c5c vaddr=3ffb16a0 size=02018h (  8216) load[0m
+[0;32mI (389) esp_image: segment 4: paddr=000abc7c vaddr=40080000 size=15574h ( 87412) load[0m
+[0;32mI (439) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (439) boot: Disabling RNG early entropy source...[0m
+[0;32mI (450) cpu_start: Multicore app[0m
+[0;32mI (451) cpu_start: Pro cpu up.[0m
+[0;32mI (451) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (468) cpu_start: Pro cpu start user code[0m
+[0;32mI (469) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (469) cpu_start: Application information:[0m
+[0;32mI (473) cpu_start: Project name:     wifi[0m
+[0;32mI (478) cpu_start: App version:      v5.1.1[0m
+[0;32mI (483) cpu_start: Compile time:     Oct 31 2023 16:43:40[0m
+[0;32mI (489) cpu_start: ELF file SHA256:  4fb48dc3528d62fc...[0m
+[0;32mI (495) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (500) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (504) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (509) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (514) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (521) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (527) heap_init: At 3FFB7738 len 000288C8 (162 KiB): DRAM[0m
+[0;32mI (533) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (540) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (546) heap_init: At 40095574 len 0000AA8C (42 KiB): IRAM[0m
+[0;32mI (554) spi_flash: detected chip: generic[0m
+[0;32mI (557) spi_flash: flash io: dio[0m
+[0;33mW (561) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (575) app_start: Starting scheduler on CPU0[0m
+[0;32mI (579) app_start: Starting scheduler on CPU1[0m
+[0;32mI (579) main_task: Started on CPU0[0m
+[0;32mI (589) main_task: Calling app_main()[0m
+I (619) wifi:wifi driver task: 3ffbe330, prio:23, stack:6656, core=0
+I (619) wifi:wifi firmware version: ce9244d
+I (619) wifi:wifi certification version: v7.0
+I (619) wifi:config NVS flash: enabled
+I (619) wifi:config nano formating: disabled
+I (629) wifi:Init data frame dynamic rx buffer num: 32
+I (629) wifi:Init management frame dynamic rx buffer num: 32
+I (639) wifi:Init management short buffer num: 32
+I (639) wifi:Init dynamic tx buffer num: 32
+I (649) wifi:Init static rx buffer size: 1600
+I (649) wifi:Init static rx buffer num: 10
+I (649) wifi:Init dynamic rx buffer num: 32
+[0;32mI (659) wifi_init: rx ba win: 6[0m
+[0;32mI (659) wifi_init: tcpip mbox: 32[0m
+[0;32mI (659) wifi_init: udp mbox: 6[0m
+[0;32mI (669) wifi_init: tcp mbox: 6[0m
+[0;32mI (669) wifi_init: tcp tx win: 5744[0m
+[0;32mI (679) wifi_init: tcp rx win: 5744[0m
+[0;32mI (679) wifi_init: tcp mss: 1440[0m
+[0;32mI (679) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (689) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (689) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (799) wifi:mode : sta (0c:8b:95:95:cf:b0)
+I (799) wifi:enable tsf
+E (799) wifi:failed to post WiFi event=2 ret=259
+Start scanning...E (6209) wifi:failed to post WiFi event=1 ret=259
+ completed!
+Found 66 access points:
+               SSID              | Channel | RSSI |   MAC 
+
+Enclave MoveIn Temporary Network |      11 |  
+                The Enclave WiFi |      11 |  
+               J-304@The_enclave |      11 |  
+                  Enclave Temp B |      11 |  
+                                 |       1 |  
+               J-204@The_enclave |       1 |  
+                The Enclave WiFi |       1 |  
+Enclave MoveIn Temporary Network |       1 |  
+Enclave MoveIn Temporary Network |       4 |  
+                The Enclave WiFi |       4 |  
+               J-104@The_enclave |       4 |  
+               J-305@The_enclave |      11 |  
+                      J 306 Temp |      11 |  
+                The Enclave WiFi |      11 |  
+               J-205@The_enclave |       8 |  
+Enclave MoveIn Temporary Network |       8 |  
+                The Enclave WiFi |       8 |  
+                                 |       6 |  
+Enclave MoveIn Temporary Network |      11 |  
+                      SETUP-1224 |       6 |  
+                                 |       6 |  
+                                 |       6 |  
+             no stinkies allowed |       3 |  
+                                 |       6 |  
+   DIRECT-B2-HP ENVY 5000 series |       4 |  
+                       I-310temp |       8 |  
+                The Enclave WiFi |       1 |  
+                  Enclave Temp A |       1 |  
+                       NETGEAR83 |       4 |  
+Enclave MoveIn Temporary Network |       8 |  
+Enclave MoveIn Temporary Network |      11 |  
+Enclave MoveIn Temporary Network |       1 |  
+                The Enclave WiFi |       1 |  
+Enclave MoveIn Temporary Network |       6 |  
+                The Enclave WiFi |       8 |  
+                      I-209@TEMP |      11 |  
+Enclave MoveIn Temporary Network |       4 |  
+   DIRECT-7E-HP ENVY 5000 series |       6 |  
+Enclave MoveIn Temporary Network |       8 |  
+Enclave MoveIn Temporary Network |       8 |  
+Enclave MoveIn Temporary Network |      11 |  
+                      I-207 Temp |      11 |  
+Enclave MoveIn Temporary Network |      11 |  
+                                 |      11 |  
+                       I-310temp |      11 |  
+               H-204@The_enclave |       4 |  
+                The Enclave WiFi |       4 |  
+                The Enclave WiFi |      11 |  
+Enclave MoveIn Temporary Network |       1 |  
+Enclave MoveIn Temporary Network |       1 |  
+Enclave MoveIn Temporary Network |       4 |  
+                                 |       7 |  
+               H-207@The_enclave |       8 |  
+Enclave MoveIn Temporary Network |       8 |  
+                The Enclave WiFi |      11 |  
+               DIRECT-PQ-VIZIOTV |       1 |  
+Enclave MoveIn Temporary Network |       1 |  
+               H-106@The_enclave |     128 |  
+                             �? |       0 |  
+                                 |      63 |  
+                                 |      11 |  
+Enclave MoveIn Temporary Network |      11 |  
+Enclave MoveIn TemporaP��?etwork |       4 |  
+Enclave MoveIn Temporary Network |       4 |  
+                The Enclave WiFi |      11 |  
+Enclave MoveIn Temporary Network |      11 |  
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Guru Meditation Error: Core  0 panic'ed (Double exception). 
+
+Core  0 register dump:
+PC      : 0x4008bb82  PS      : 0x00040436  A0      : 0x00000000  A1      : 0x3ffb96d0  
+A2      : 0x3ffb0030  A3      : 0x3ffb9710  A4      : 0x00000001  A5      : 0x3ffb9700  
+A6      : 0x00060936  A7      : 0x00040026  A8      : 0x400803c0  A9      : 0x3ffb9860  
+A10     : 0x00060636  A11     : 0x00040026  A12     : 0x3ffb9940  A13     : 0x400850ff  
+A14     : 0x00000042  A15     : 0x3ffb9284  SAR     : 0x0000000c  EXCCAUSE: 0x00000002  
+EXCVADDR: 0xffffffe0  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffff8  
+
+
+Backtrace: 0x4008bb7f:0x3ffb96d0
+
+
+
+
+ELF file SHA256: 4fb48dc3528d62fc
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 271414342, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 31 2023 16:43:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e950h (125264) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0002e978 vaddr=3ffb0000 size=016a0h (  5792) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=79c34h (498740) map[0m
+[0;32mI (336) esp_image: segment 3: paddr=000a9c5c vaddr=3ffb16a0 size=02018h (  8216) load[0m
+[0;32mI (339) esp_image: segment 4: paddr=000abc7c vaddr=40080000 size=15574h ( 87412) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu up.[0m
+[0;32mI (401) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (388) cpu_start: App cpu up.[0m
+[0;32mI (419) cpu_start: Pro cpu start user code[0m
+[0;32mI (419) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (419) cpu_start: Application information:[0m
+[0;32mI (423) cpu_start: Project name:     wifi[0m
+[0;32mI (428) cpu_start: App version:      v5.1.1[0m
+[0;32mI (433) cpu_start: Compile time:     Oct 31 2023 16:43:40[0m
+[0;32mI (439) cpu_start: ELF file SHA256:  4fb48dc3528d62fc...[0m
+[0;32mI (445) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (450) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (455) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (460) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (464) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (472) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (478) heap_init: At 3FFB7738 len 000288C8 (162 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 40095574 len 0000AA8C (42 KiB): IRAM[0m
+[0;32mI (504) spi_flash: detected chip: generic[0m
+[0;32mI (507) spi_flash: flash io: dio[0m
+[0;33mW (511) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (525) app_start: Starting scheduler on CPU0[0m
+[0;32mI (530) app_start: Starting scheduler on CPU1[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+I (570) wifi:wifi driver task: 3ffbe330, prio:23, stack:6656, core=0
+I (570) wifi:wifi firmware version: ce9244d
+I (570) wifi:wifi certification version: v7.0
+I (570) wifi:config NVS flash: enabled
+I (570) wifi:config nano formating: disabled
+I (580) wifi:Init data frame dynamic rx buffer num: 32
+I (580) wifi:Init management frame dynamic rx buffer num: 32
+I (590) wifi:Init management short buffer num: 32
+I (590) wifi:Init dynamic tx buffer num: 32
+I (600) wifi:Init static rx buffer size: 1600
+I (600) wifi:Init static rx buffer num: 10
+I (600) wifi:Init dynamic rx buffer num: 32
+[0;32mI (610) wifi_init: rx ba win: 6[0m
+[0;32mI (610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (610) wifi_init: udp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp tx win: 5744[0m
+[0;32mI (630) wifi_init: tcp rx win: 5744[0m
+[0;32mI (630) wifi_init: tcp mss: 1440[0m
+[0;32mI (630) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (640) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (640) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (750) wifi:mode : sta (0c:8b:95:95:cf:b0)
+I (750) wifi:enable tsf
+E (750) wifi:failed to post WiFi event=2 ret=259
+Start scanning...E (6160) wifi:failed to post WiFi event=1 ret=259
+ completed!
+Found 75 access points:
+               SSID              | Channel | RSSI |   MAC 
+
+Enclave MoveIn Temporary Network |      11 |  
+           [0;31mE (6250) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     The Enclave WiFi |      11 |  
+       [0;31mE (6260) task_wdt: esp_task_wdt_reset(783): task not found[0m
+           Enclave Temp B |      11 |  
+   [0;31mE (6270) task_wdt: esp_task_wdt_reset(783): task not found[0m
+            J-304@The_enclave |      11 |  [0;31mE (6280) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+                The Enclave WiFi |       1 [0;31mE (6290) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|  
+               J-204@The_enclave |      [0;31mE (6300) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 1 |  
+Enclave MoveIn Temporary Network |  [0;31mE (6310) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     1 |  
+Enclave MoveIn Temporary Network[0;31mE (6320) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |       4 |  
+               J-104@The_enc[0;31mE (6330) task_wdt: esp_task_wdt_reset(783): task not found[0m
+lave |       4 |  
+                The Encl[0;31mE (6340) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ave WiFi |       4 |  
+               J-205@[0;31mE (6350) task_wdt: esp_task_wdt_reset(783): task not found[0m
+The_enclave |       8 |  
+                T[0;31mE (6360) task_wdt: esp_task_wdt_reset(783): task not found[0m
+he Enclave WiFi |      11 |  
+             [0;31mE (6370) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  J-305@The_enclave |      11 |  
+         [0;31mE (6380) task_wdt: esp_task_wdt_reset(783): task not found[0m
+             J 306 Temp |      11 |  
+     [0;31mE (6390) task_wdt: esp_task_wdt_reset(783): task not found[0m
+           The Enclave WiFi |       8 |  
+En[0;31mE (6400) task_wdt: esp_task_wdt_reset(783): task not found[0m
+clave MoveIn Temporary Network |       8 |  [0;31mE (6410) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+Enclave MoveIn Temporary Network |      11[0;31mE (6420) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |  
+                                 |    [0;31mE (6430) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   6 |  
+       TP-LINK_Smart Plug_A985_G |[0;31mE (6440) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       6 |  
+                      SETUP-122[0;31mE (6450) task_wdt: esp_task_wdt_reset(783): task not found[0m
+4 |       6 |  
+                           [0;31mE (6460) task_wdt: esp_task_wdt_reset(783): task not found[0m
+      |       6 |  
+                       [0;31mE (6470) task_wdt: esp_task_wdt_reset(783): task not found[0m
+          |       6 |  
+                   [0;31mE (6480) task_wdt: esp_task_wdt_reset(783): task not found[0m
+              |       6 |  
+Enclave MoveIn [0;31mE (6490) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Temporary Network |       8 |  
+            [0;31mE (6500) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ no stinkies allowed |       3 |  
+        [0;31mE (6510) task_wdt: esp_task_wdt_reset(783): task not found[0m
+               I-310temp |       8 |  
+    [0;31mE (6520) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                   NETGEAR83 |       4 |  
+[0;31mE (6530) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                The Enclave WiFi |       8 |[0;31mE (6540) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  
+                  Enclave Temp A |       [0;31mE (6550) task_wdt: esp_task_wdt_reset(783): task not found[0m
+8 |  
+                The Enclave WiFi |   [0;31mE (6560) task_wdt: esp_task_wdt_reset(783): task not found[0m
+    1 |  
+   DIRECT-7E-HP ENVY 5000 series [0;31mE (6570) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|       6 |  
+Enclave MoveIn Temporary Netw[0;31mE (6580) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ork |       1 |  
+Enclave MoveIn Temporary [0;31mE (6590) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Network |       4 |  
+Enclave MoveIn Tempora[0;31mE (6600) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ry Network |       6 |  
+               I-3[0;31mE (6610) task_wdt: esp_task_wdt_reset(783): task not found[0m
+08@The_enclave |       8 |  
+Enclave MoveIn[0;31mE (6620) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ Temporary Network |       8 |  
+Enclave Mo[0;31mE (6630) task_wdt: esp_task_wdt_reset(783): task not found[0m
+veIn Temporary Network |       8 |  
+      [0;31mE (6640) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                I-209@TEMP |      11 |  
+Enc[0;31mE (6650) task_wdt: esp_task_wdt_reset(783): task not found[0m
+lave MoveIn Temporary Network |      11 |  [0;31mE (6660) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+Enclave MoveIn Temporary Network |       8 [0;31mE (6670) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|  
+                The Enclave WiFi |     [0;31mE (6680) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  8 |  
+Enclave MoveIn Temporary Network | [0;31mE (6690) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     11 |  
+Enclave MoveIn Temporary Network[0;31mE (6700) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |       1 |  
+                       I-310[0;31mE (6710) task_wdt: esp_task_wdt_reset(783): task not found[0m
+temp |       1 |  
+                The Encl[0;31mE (6720) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ave WiFi |       1 |  
+                The [0;31mE (6730) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Enclave WiFi |       6 |  
+               H[0;31mE (6740) task_wdt: esp_task_wdt_reset(783): task not found[0m
+-310@The_enclave |       6 |  
+Enclave MoveI[0;31mE (6750) task_wdt: esp_task_wdt_reset(783): task not found[0m
+n Temporary Network |       1 |  
+         [0;31mE (6760) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  eufy RoboVac 25C-8ECE |       1 |  
+   DI[0;31mE (6770) task_wdt: esp_task_wdt_reset(783): task not found[0m
+RECT-B2-HP ENVY 5000 series |       4 |  
+E[0;31mE (6780) task_wdt: esp_task_wdt_reset(783): task not found[0m
+nclave MoveIn Temporary Network |       4 | [0;31mE (6790) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 
+                The Enclave WiFi |       8[0;31mE (6800) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |  
+Enclave MoveIn Temporary Network |    [0;31mE (6810) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  11 |  
+               I-109@The_enclave |[0;31mE (6820) task_wdt: esp_task_wdt_reset(783): task not found[0m
+      11 |  
+Enclave MoveIn Temporary Netwo[0;31mE (6830) task_wdt: esp_task_wdt_reset(783): task not found[0m
+rk |       1 |  
+               H-106@The_en[0;31mE (6840) task_wdt: esp_task_wdt_reset(783): task not found[0m
+clave |       4 |  
+               H-204@38[0;31mE (6850) task_wdt: esp_task_wdt_reset(783): task not found[0m
+76enclave |       4 |  
+                   [0;31mE (6860) task_wdt: esp_task_wdt_reset(783): task not found[0m
+        H-783 |     128 |  
+               [0;31mE (6870) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                  |       0 |  
+           [0;31mE (6880) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                      |      63 |  
+        [0;31mE (6890) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                         |       8 |  
+    [0;31mE (6900) task_wdt: esp_task_wdt_reset(783): task not found[0m
+            The Enclave WiFi |      11 |  
+[0;31mE (6910) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Enclave MoveIn TemporaP��?etwork |      11 |[0;31mE (6920) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  
+                The Enclave WiFi |      [0;31mE (6930) task_wdt: esp_task_wdt_reset(783): task not found[0m
+11 |  
+                The Enclave WiFi |   [0;31mE (6940) task_wdt: esp_task_wdt_reset(783): task not found[0m
+    1 |  
+                          MNWHJD [0;31mE (6950) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|       2 |  
+Enclave MoveIn Temporary Netw[0;31mE (6960) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ork |       4 |  
+                The Encla[0;31mE (6970) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ve WiFi |       8 |  
+Enclave MoveIn Tempor[0;31mE (6980) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ary Network |       9 |  
+               H-3[0;31mE (6990) task_wdt: esp_task_wdt_reset(783): task not found[0m
+06@The_enclave |      11 |  
+              [0;31mE (7000) task_wdt: esp_task_wdt_reset(783): task not found[0m
+         TEMPG-306 |      11 |  
+Enclave Mo[0;31mE (7010) task_wdt: esp_task_wdt_reset(783): task not found[0m
+veIn Temporary Network |       8 |  
+Enclav[0;31mE (7020) task_wdt: esp_task_wdt_reset(783): task not found[0m
+e MoveIn Temporary Network |       8 |  
+  [0;31mE (7030) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                     I-310temp |      11 |  [0;31mE (7040) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+Enclave MoveIn Temporary Network |       1 [0;31mE (7050) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|  
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Guru Meditation Error: Core  0 panic'ed (Double exception). 
+
+Core  0 register dump:
+PC      : 0x4008bb82  PS      : 0x00040436  A0      : 0x00000000  A1      : 0x3ffb96d0  
+A2      : 0x3ffb0030  A3      : 0x3ffb9710  A4      : 0x00000001  A5      : 0x3ffb9700  
+A6      : 0x00060936  A7      : 0x00040026  A8      : 0x400803c0  A9      : 0x3ffb9860  
+A10     : 0x00060636  A11     : 0x00040026  A12     : 0x3ffb9940  A13     : 0x400850ff  
+A14     : 0x0000004b  A15     : 0x3ffb9284  SAR     : 0x0000000c  EXCCAUSE: 0x00000002  
+EXCVADDR: 0xffffffe0  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffff8  
+
+
+Backtrace: 0x4008bb7f:0x3ffb96d0
+
+
+
+
+ELF file SHA256: 4fb48dc3528d62fc
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 271414342, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 31 2023 16:43:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e950h (125264) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0002e978 vaddr=3ffb0000 size=016a0h (  5792) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=79c34h (498740) map[0m
+[0;32mI (336) esp_image: segment 3: paddr=000a9c5c vaddr=3ffb16a0 size=02018h (  8216) load[0m
+[0;32mI (339) esp_image: segment 4: paddr=000abc7c vaddr=40080000 size=15574h ( 87412) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu up.[0m
+[0;32mI (401) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (388) cpu_start: App cpu up.[0m
+[0;32mI (419) cpu_start: Pro cpu start user code[0m
+[0;32mI (419) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (419) cpu_start: Application information:[0m
+[0;32mI (423) cpu_start: Project name:     wifi[0m
+[0;32mI (428) cpu_start: App version:      v5.1.1[0m
+[0;32mI (433) cpu_start: Compile time:     Oct 31 2023 16:43:40[0m
+[0;32mI (439) cpu_start: ELF file SHA256:  4fb48dc3528d62fc...[0m
+[0;32mI (445) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (450) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (455) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (460) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (464) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (472) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (478) heap_init: At 3FFB7738 len 000288C8 (162 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 40095574 len 0000AA8C (42 KiB): IRAM[0m
+[0;32mI (504) spi_flash: detected chip: generic[0m
+[0;32mI (507) spi_flash: flash io: dio[0m
+[0;33mW (511) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (525) app_start: Starting scheduler on CPU0[0m
+[0;32mI (530) app_start: Starting scheduler on CPU1[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+I (570) wifi:wifi driver task: 3ffbe330, prio:23, stack:6656, core=0
+I (570) wifi:wifi firmware version: ce9244d
+I (570) wifi:wifi certification version: v7.0
+I (570) wifi:config NVS flash: enabled
+I (570) wifi:config nano formating: disabled
+I (580) wifi:Init data frame dynamic rx buffer num: 32
+I (580) wifi:Init management frame dynamic rx buffer num: 32
+I (590) wifi:Init management short buffer num: 32
+I (590) wifi:Init dynamic tx buffer num: 32
+I (600) wifi:Init static rx buffer size: 1600
+I (600) wifi:Init static rx buffer num: 10
+I (600) wifi:Init dynamic rx buffer num: 32
+[0;32mI (610) wifi_init: rx ba win: 6[0m
+[0;32mI (610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (610) wifi_init: udp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp tx win: 5744[0m
+[0;32mI (630) wifi_init: tcp rx win: 5744[0m
+[0;32mI (630) wifi_init: tcp mss: 1440[0m
+[0;32mI (630) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (640) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (640) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (750) wifi:mode : sta (0c:8b:95:95:cf:b0)
+I (750) wifi:enable tsf
+E (750) wifi:failed to post WiFi event=2 ret=259
+Start scanning...E (6160) wifi:failed to post WiFi event=1 ret=259
+ completed!
+Found 74 access points:
+               SSID              | Channel | RSSI |   MAC 
+
+Enclave MoveIn Temporary Network |      11 |  
+           Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x4000c26c  PS      : 0x00060033  A0      : 0x8008a30b  A1      : 0x3ffba510  
+A2      : 0x00000000  A3      : 0x3f403830  A4      : 0x00000014  A5      : 0x00060023  
+A6      : 0xb33fffff  A7      : 0xb33fffff  A8      : 0x00000001  A9      : 0x00000000  
+A10     : 0x00000001  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3ffb2120  
+A14     : 0x3ffb3be4  A15     : 0x00060021  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4000c269:0x3ffba510 0x4008a308:0x3ffba530 0x4008b978:0x3ffba550 0x4008b92a:0x00706d65 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 4fb48dc3528d62fc
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 271414342, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 31 2023 16:43:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e950h (125264) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0002e978 vaddr=3ffb0000 size=016a0h (  5792) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=79c34h (498740) map[0m
+[0;32mI (336) esp_image: segment 3: paddr=000a9c5c vaddr=3ffb16a0 size=02018h (  8216) load[0m
+[0;32mI (339) esp_image: segment 4: paddr=000abc7c vaddr=40080000 size=15574h ( 87412) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu up.[0m
+[0;32mI (401) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (388) cpu_start: App cpu up.[0m
+[0;32mI (419) cpu_start: Pro cpu start user code[0m
+[0;32mI (419) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (419) cpu_start: Application information:[0m
+[0;32mI (423) cpu_start: Project name:     wifi[0m
+[0;32mI (428) cpu_start: App version:      v5.1.1[0m
+[0;32mI (433) cpu_start: Compile time:     Oct 31 2023 16:43:40[0m
+[0;32mI (439) cpu_start: ELF file SHA256:  4fb48dc3528d62fc...[0m
+[0;32mI (445) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (450) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (455) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (459) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (464) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (472) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (477) heap_init: At 3FFB7738 len 000288C8 (162 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 40095574 len 0000AA8C (42 KiB): IRAM[0m
+[0;32mI (504) spi_flash: detected chip: generic[0m
+[0;32mI (507) spi_flash: flash io: dio[0m
+[0;33mW (511) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (525) app_start: Starting scheduler on CPU0[0m
+[0;32mI (530) app_start: Starting scheduler on CPU1[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+I (570) wifi:wifi driver task: 3ffbe330, prio:23, stack:6656, core=0
+I (570) wifi:wifi firmware version: ce9244d
+I (570) wifi:wifi certification version: v7.0
+I (570) wifi:config NVS flash: enabled
+I (570) wifi:config nano formating: disabled
+I (580) wifi:Init data frame dynamic rx buffer num: 32
+I (580) wifi:Init management frame dynamic rx buffer num: 32
+I (590) wifi:Init management short buffer num: 32
+I (590) wifi:Init dynamic tx buffer num: 32
+I (600) wifi:Init static rx buffer size: 1600
+I (600) wifi:Init static rx buffer num: 10
+I (600) wifi:Init dynamic rx buffer num: 32
+[0;32mI (610) wifi_init: rx ba win: 6[0m
+[0;32mI (610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (610) wifi_init: udp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp tx win: 5744[0m
+[0;32mI (630) wifi_init: tcp rx win: 5744[0m
+[0;32mI (630) wifi_init: tcp mss: 1440[0m
+[0;32mI (630) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (640) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (640) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (750) wifi:mode : sta (0c:8b:95:95:cf:b0)
+I (750) wifi:enable tsf
+E (750) wifi:failed to post WiFi event=2 ret=259
+Start scanning...E (6160) wifi:failed to post WiFi event=1 ret=259
+ completed!
+Found 66 access points:
+               SSID              | Channel | RSSI |   MAC 
+
+Enclave MoveIn Temporary Network |      11 |  
+                The Enclave WiFi |      11 |  
+               J-304@The_enclave |      11 |  
+                  Enclave Temp B |      11 |  
+                The Enclave WiFi |       1 |  
+               J-204@The_enclave |       1 |  
+Enclave MoveIn Temporary Network |       1 |  
+Enclave MoveIn Temporary Network |       4 |  
+                The Enclave WiFi |       4 |  
+               J-104@The_enclave |       4 |  
+               J-205@The_enclave |       8 |  
+                The Enclave WiFi |      11 |  
+               J-305@The_enclave |      11 |  
+                      J 306 Temp |      11 |  
+                The Enclave WiFi |       8 |  
+                                 |       6 |  
+Enclave MoveIn Temporary Network |       8 |  
+                                 |       6 |  
+                                 |       6 |  
+                                 |       6 |  
+Enclave MoveIn Temporary Network |      11 |  
+                      SETUP-1224 |       6 |  
+                The Enclave WiFi |       8 |  
+Enclave MoveIn Temporary Network |       8 |  
+       TP-LINK_Smart Plug_A985_G |       6 |  
+Enclave MoveIn Temporary Network |       1 |  
+                The Enclave WiFi |       1 |  
+               I-308@The_enclave |       8 |  
+                The Enclave WiFi |       8 |  
+                       NETGEAR83 |       4 |  
+                                 |      11 |  
+                       I-310temp |      11 |  
+                  Enclave Temp A |       8 |  
+                      I-207 Temp |      11 |  
+   DIRECT-7E-HP ENVY 5000 series |       6 |  
+Enclave MoveIn Temporary Network |       8 |  
+Enclave MoveIn Temporary Network |      11 |  
+Enclave MoveIn Temporary Network |      11 |  
+                      I-209@TEMP |      11 |  
+Enclave MoveIn Temporary Network |       1 |  
+                The Enclave WiFi |       4 |  
+   DIRECT-B2-HP ENVY 5000 series |       4 |  
+Enclave MoveIn Temporary Network |       8 |  
+                The Enclave WiFi |       8 |  
+Enclave MoveIn Temporary Network |       8 |  
+Enclave MoveIn Temporary Network |       8 |  
+           eufy RoboVac 25C-8ECE |       1 |  
+                The Enclave WiFi |       1 |  
+               H-205@The_enclave |       1 |  
+Enclave MoveIn Temporary Network |       1 |  
+Enclave MoveIn Temporary Network |       1 |  
+               H-204@The_enclave |       4 |  
+Enclave MoveIn Temporary Network |       4 |  
+Enclave MoveIn Temporary Network |       4 |  
+               H-306@The_enclave |      11 |  
+               H-207@The_enclave |       8 |  
+               H-104@The_enclave |       8 |  
+                           J104T |     128 |  
+                             �? |       0 |  
+                                 |      63 |  
+                                 |       1 |  
+                The Enclave WiFi |       8 |  
+                The Enclave WiFi |      11 |  
+Enclave MoveIn Temporary Network |       4 |  
+Enclave MoveIn Temporary Network |       1 |  
+Enclave MoveIn Temporary Network |      11 |  
+Guru Meditation Error: Core  0 panic'ed (InstrFetchProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x01205355  PS      : 0x00050033  A0      : 0x01205355  A1      : 0x3ffb9f40  
+A2      : 0x6e45e8e8  A3      : 0x76616c63  A4      : 0x6f4d2065  A5      : 0x6e496576  
+A6      : 0x6d655420  A7      : 0x61726f70  A8      : 0x4e207972  A9      : 0x6f777465  
+A10     : 0x01006b72  A11     : 0x00000000  A12     : 0x000000a8  A13     : 0x00000000  
+A14     : 0x00000000  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x00000014  
+EXCVADDR: 0x01205354  LBEG    : 0x0000240b  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x01205352:0x3ffb9f40 0x01205352:0x00000004 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 4fb48dc3528d62fc
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 271414342, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 31 2023 16:43:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e950h (125264) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0002e978 vaddr=3ffb0000 size=016a0h (  5792) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=79c34h (498740) map[0m
+[0;32mI (336) esp_image: segment 3: paddr=000a9c5c vaddr=3ffb16a0 size=02018h (  8216) load[0m
+[0;32mI (339) esp_image: segment 4: paddr=000abc7c vaddr=40080000 size=15574h ( 87412) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu up.[0m
+[0;32mI (401) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (388) cpu_start: App cpu up.[0m
+[0;32mI (419) cpu_start: Pro cpu start user code[0m
+[0;32mI (419) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (419) cpu_start: Application information:[0m
+[0;32mI (423) cpu_start: Project name:     wifi[0m
+[0;32mI (428) cpu_start: App version:      v5.1.1[0m
+[0;32mI (433) cpu_start: Compile time:     Oct 31 2023 16:43:40[0m
+[0;32mI (439) cpu_start: ELF file SHA256:  4fb48dc3528d62fc...[0m
+[0;32mI (445) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (450) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (455) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (460) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (464) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (472) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (478) heap_init: At 3FFB7738 len 000288C8 (162 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 40095574 len 0000AA8C (42 KiB): IRAM[0m
+[0;32mI (504) spi_flash: detected chip: generic[0m
+[0;32mI (507) spi_flash: flash io: dio[0m
+[0;33mW (511) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (525) app_start: Starting scheduler on CPU0[0m
+[0;32mI (530) app_start: Starting scheduler on CPU1[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+I (570) wifi:wifi driver task: 3ffbe330, prio:23, stack:6656, core=0
+I (570) wifi:wifi firmware version: ce9244d
+I (570) wifi:wifi certification version: v7.0
+I (570) wifi:config NVS flash: enabled
+I (570) wifi:config nano formating: disabled
+I (580) wifi:Init data frame dynamic rx buffer num: 32
+I (580) wifi:Init management frame dynamic rx buffer num: 32
+I (590) wifi:Init management short buffer num: 32
+I (590) wifi:Init dynamic tx buffer num: 32
+I (600) wifi:Init static rx buffer size: 1600
+I (600) wifi:Init static rx buffer num: 10
+I (600) wifi:Init dynamic rx buffer num: 32
+[0;32mI (610) wifi_init: rx ba win: 6[0m
+[0;32mI (610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (610) wifi_init: udp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp tx win: 5744[0m
+[0;32mI (630) wifi_init: tcp rx win: 5744[0m
+[0;32mI (630) wifi_init: tcp mss: 1440[0m
+[0;32mI (630) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (640) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (640) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (750) wifi:mode : sta (0c:8b:95:95:cf:b0)
+I (750) wifi:enable tsf
+E (750) wifi:failed to post WiFi event=2 ret=259
+Start scanning...E (6160) wifi:failed to post WiFi event=1 ret=259
+ completed!
+Found 78 access points:
+               SSID              | Channel | RSSI |   MAC 
+
+Enclave MoveIn Temporary Network |      11 |  
+           Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d78bc  PS      : 0x00060733  A0      : 0x800d7e7c  A1      : 0x3ffba5b0  
+A2      : 0x00000000  A3      : 0x3ffba5e0  A4      : 0x00000004  A5      : 0x00060723  
+A6      : 0xb33fffff  A7      : 0xb33fffff  A8      : 0x00000004  A9      : 0x00000055  
+A10     : 0x3ffba6f8  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x00060023  
+A14     : 0xb33fffff  A15     : 0xb33fffff  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000008  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400d78b9:0x3ffba5b0 0x400d7e79:0x3ffba5d0 0x400d7ec7:0x3ffba610 0x400d2469:0x3ffba630 0x40089e35:0x3ffba650 0x4008b4f9:0x6e496576 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 4fb48dc3528d62fc
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 271414342, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 31 2023 16:43:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e950h (125264) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0002e978 vaddr=3ffb0000 size=016a0h (  5792) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=79c34h (498740) map[0m
+[0;32mI (336) esp_image: segment 3: paddr=000a9c5c vaddr=3ffb16a0 size=02018h (  8216) load[0m
+[0;32mI (339) esp_image: segment 4: paddr=000abc7c vaddr=40080000 size=15574h ( 87412) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu up.[0m
+[0;32mI (401) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (388) cpu_start: App cpu up.[0m
+[0;32mI (419) cpu_start: Pro cpu start user code[0m
+[0;32mI (419) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (419) cpu_start: Application information:[0m
+[0;32mI (423) cpu_start: Project name:     wifi[0m
+[0;32mI (428) cpu_start: App version:      v5.1.1[0m
+[0;32mI (433) cpu_start: Compile time:     Oct 31 2023 16:43:40[0m
+[0;32mI (439) cpu_start: ELF file SHA256:  4fb48dc3528d62fc...[0m
+[0;32mI (445) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (450) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (455) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (459) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (464) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (472) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (477) heap_init: At 3FFB7738 len 000288C8 (162 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 40095574 len 0000AA8C (42 KiB): IRAM[0m
+[0;32mI (504) spi_flash: detected chip: generic[0m
+[0;32mI (507) spi_flash: flash io: dio[0m
+[0;33mW (511) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (525) app_start: Starting scheduler on CPU0[0m
+[0;32mI (530) app_start: Starting scheduler on CPU1[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+I (570) wifi:wifi driver task: 3ffbe330, prio:23, stack:6656, core=0
+I (570) wifi:wifi firmware version: ce9244d
+I (570) wifi:wifi certification version: v7.0
+I (570) wifi:config NVS flash: enabled
+I (570) wifi:config nano formating: disabled
+I (580) wifi:Init data frame dynamic rx buffer num: 32
+I (580) wifi:Init management frame dynamic rx buffer num: 32
+I (590) wifi:Init management short buffer num: 32
+I (590) wifi:Init dynamic tx buffer num: 32
+I (600) wifi:Init static rx buffer size: 1600
+I (600) wifi:Init static rx buffer num: 10
+I (600) wifi:Init dynamic rx buffer num: 32
+[0;32mI (610) wifi_init: rx ba win: 6[0m
+[0;32mI (610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (610) wifi_init: udp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp tx win: 5744[0m
+[0;32mI (630) wifi_init: tcp rx win: 5744[0m
+[0;32mI (630) wifi_init: tcp mss: 1440[0m
+[0;32mI (630) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (640) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (640) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (750) wifi:mode : sta (0c:8b:95:95:cf:b0)
+I (750) wifi:enable tsf
+E (750) wifi:failed to post WiFi event=2 ret=259
+Start scanning...E (6160) wifi:failed to post WiFi event=1 ret=259
+ completed!
+Found 74 access points:
+               SSID              | Channel | RSSI |   MAC 
+
+Enclave MoveIn Temporary Network |      11 |  
+           [0;31mE (6250) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     The Enclave WiFi |      11 |  
+       [0;31mE (6260) task_wdt: esp_task_wdt_reset(783): task not found[0m
+           Enclave Temp B |      11 |  
+   [0;31mE (6270) task_wdt: esp_task_wdt_reset(783): task not found[0m
+            J-304@The_enclave |      11 |  [0;31mE (6280) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+                                 |       1 [0;31mE (6290) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|  
+                The Enclave WiFi |      [0;31mE (6300) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 1 |  
+               J-204@The_enclave |  [0;31mE (6310) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     1 |  
+Enclave MoveIn Temporary Network[0;31mE (6320) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |       1 |  
+Enclave MoveIn Temporary Net[0;31mE (6330) task_wdt: esp_task_wdt_reset(783): task not found[0m
+work |       4 |  
+                The Encl[0;31mE (6340) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ave WiFi |       4 |  
+               J-104@[0;31mE (6350) task_wdt: esp_task_wdt_reset(783): task not found[0m
+The_enclave |       4 |  
+                T[0;31mE (6360) task_wdt: esp_task_wdt_reset(783): task not found[0m
+he Enclave WiFi |       8 |  
+             [0;31mE (6370) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   The Enclave WiFi |      11 |  
+         [0;31mE (6380) task_wdt: esp_task_wdt_reset(783): task not found[0m
+      J-305@The_enclave |      11 |  
+     [0;31mE (6390) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                 J 306 Temp |      11 |  
+  [0;31mE (6400) task_wdt: esp_task_wdt_reset(783): task not found[0m
+             J-205@The_enclave |       8 |  [0;31mE (6410) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+Enclave MoveIn Temporary Network |       8[0;31mE (6420) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |  
+Enclave MoveIn Temporary Network |    [0;31mE (6430) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  11 |  
+       TP-LINK_Smart Plug_A985_G |[0;31mE (6440) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       6 |  
+                               [0;31mE (6450) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  |       6 |  
+                           [0;31mE (6460) task_wdt: esp_task_wdt_reset(783): task not found[0m
+      |       6 |  
+Enclave MoveIn Temporar[0;31mE (6470) task_wdt: esp_task_wdt_reset(783): task not found[0m
+y Network |       8 |  
+                   [0;31mE (6480) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   SETUP-1224 |       6 |  
+               [0;31mE (6490) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                  |       6 |  
+            [0;31mE (6500) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                     |       6 |  
+Enclave [0;31mE (6510) task_wdt: esp_task_wdt_reset(783): task not found[0m
+MoveIn Temporary Network |       1 |  
+    [0;31mE (6520) task_wdt: esp_task_wdt_reset(783): task not found[0m
+            The Enclave WiFi |       1 |  
+[0;31mE (6530) task_wdt: esp_task_wdt_reset(783): task not found[0m
+               J-103@The_enclave |       1 |[0;31mE (6540) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  
+                The Enclave WiFi |       [0;31mE (6550) task_wdt: esp_task_wdt_reset(783): task not found[0m
+8 |  
+                The Enclave WiFi |   [0;31mE (6560) task_wdt: esp_task_wdt_reset(783): task not found[0m
+    8 |  
+                                 [0;31mE (6570) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|       8 |  
+               I-309@The_encl[0;31mE (6580) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ave |       1 |  
+                  Enclave[0;31mE (6590) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ Temp A |       1 |  
+                      [0;31mE (6600) task_wdt: esp_task_wdt_reset(783): task not found[0m
+    J-203T |       1 |  
+Enclave MoveIn Tem[0;31mE (6610) task_wdt: esp_task_wdt_reset(783): task not found[0m
+porary Network |       8 |  
+              [0;31mE (6620) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ I-108@The_enclave |       8 |  
+Enclave Mo[0;31mE (6630) task_wdt: esp_task_wdt_reset(783): task not found[0m
+veIn Temporary Network |      11 |  
+      [0;31mE (6640) task_wdt: esp_task_wdt_reset(783): task not found[0m
+          The Enclave WiFi |       1 |  
+   [0;31mE (6650) task_wdt: esp_task_wdt_reset(783): task not found[0m
+          no stinkies allowed |       3 |  [0;31mE (6660) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+Enclave MoveIn Temporary Network |       6 [0;31mE (6670) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|  
+                  Enclave Temp A |     [0;31mE (6680) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  8 |  
+Enclave MoveIn Temporary Network | [0;31mE (6690) task_wdt: esp_task_wdt_reset(783): task not found[0m
+      1 |  
+                       I-310temp[0;31mE (6700) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |       1 |  
+Enclave MoveIn Temporary Net[0;31mE (6710) task_wdt: esp_task_wdt_reset(783): task not found[0m
+work |       8 |  
+Enclave MoveIn Temporary[0;31mE (6720) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ Network |       8 |  
+                    [0;31mE (6730) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  I-207 Temp |      11 |  
+Enclave MoveIn T[0;31mE (6740) task_wdt: esp_task_wdt_reset(783): task not found[0m
+emporary Network |      11 |  
+Enclave MoveI[0;31mE (6750) task_wdt: esp_task_wdt_reset(783): task not found[0m
+n Temporary Network |      11 |  
+         [0;31mE (6760) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       The Enclave WiFi |       6 |  
+     [0;31mE (6770) task_wdt: esp_task_wdt_reset(783): task not found[0m
+          H-207@The_enclave |       8 |  
+E[0;31mE (6780) task_wdt: esp_task_wdt_reset(783): task not found[0m
+nclave MoveIn Temporary Network |       8 | [0;31mE (6790) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 
+                       I-310temp |      11[0;31mE (6800) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |  
+Enclave MoveIn Temporary Network |    [0;31mE (6810) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   1 |  
+   DIRECT-B2-HP ENVY 5000 series |[0;31mE (6820) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       4 |  
+                The Enclave Wi[0;31mE (6830) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Fi |       4 |  
+                The Enclav[0;31mE (6840) task_wdt: esp_task_wdt_reset(783): task not found[0m
+e WiFi |       8 |  
+                The En3[0;31mE (6850) task_wdt: esp_task_wdt_reset(783): task not found[0m
+876e WiFi |      11 |  
+                   [0;31mE (6860) task_wdt: esp_task_wdt_reset(783): task not found[0m
+        I-783 |     128 |  
+               [0;31mE (6870) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                  |       0 |  
+           [0;31mE (6880) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                      |      63 |  
+        [0;31mE (6890) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                         |       1 |  
+Encl[0;31mE (6900) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ave MoveIn Temporary Network |       1 |  
+[0;31mE (6910) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                The Enclave WiFi |       1 |[0;31mE (6920) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  
+               H-306@The_enclave |      [0;31mE (6930) task_wdt: esp_task_wdt_reset(783): task not found[0m
+11 |  
+                The Enclave WiFi |   [0;31mE (6940) task_wdt: esp_task_wdt_reset(783): task not found[0m
+    1 |  
+Enclave MoveIn Temporary Network [0;31mE (6950) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|       4 |  
+                The Enclave W[0;31mE (6960) task_wdt: esp_task_wdt_reset(783): task not found[0m
+iFi |       8 |  
+                The Encla[0;31mE (6970) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ve WiFi |      11 |  
+Enclave MoveIn Tempor[0;31mE (6980) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ary Network |       8 |  
+Enclave MoveIn Tem[0;31mE (6990) task_wdt: esp_task_wdt_reset(783): task not found[0m
+porary Network |       9 |  
+              [0;31mE (7000) task_wdt: esp_task_wdt_reset(783): task not found[0m
+         TEMPG-306 |      11 |  
+          [0;31mE (7010) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     LEISURE470-356652 |       6 |  
+Enclav[0;31mE (7020) task_wdt: esp_task_wdt_reset(783): task not found[0m
+e MoveIn Temporary Network |       8 |  
+En[0;31mE (7030) task_wdt: esp_task_wdt_reset(783): task not found[0m
+clave MoveIn Temporary Network |       4 |  [0;31mE (7040) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Guru Meditation Error: Core  0 panic'ed (Double exception). 
+
+Core  0 register dump:
+PC      : 0x4008bb82  PS      : 0x00040436  A0      : 0x00000000  A1      : 0x3ffb96d0  
+A2      : 0x3ffb0030  A3      : 0x3ffb9710  A4      : 0x00000001  A5      : 0x3ffb9700  
+A6      : 0x00060936  A7      : 0x00040026  A8      : 0x400803c0  A9      : 0x3ffb9860  
+A10     : 0x00060636  A11     : 0x00040026  A12     : 0x3ffb9940  A13     : 0x400850ff  
+A14     : 0x0000004a  A15     : 0x3ffb9284  SAR     : 0x0000000c  EXCCAUSE: 0x00000002  
+EXCVADDR: 0xffffffe0  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffff8  
+
+
+Backtrace: 0x4008bb7f:0x3ffb96d0
+
+
+
+
+ELF file SHA256: 4fb48dc3528d62fc
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 271414342, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 31 2023 16:43:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e950h (125264) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0002e978 vaddr=3ffb0000 size=016a0h (  5792) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=79c34h (498740) map[0m
+[0;32mI (336) esp_image: segment 3: paddr=000a9c5c vaddr=3ffb16a0 size=02018h (  8216) load[0m
+[0;32mI (339) esp_image: segment 4: paddr=000abc7c vaddr=40080000 size=15574h ( 87412) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu up.[0m
+[0;32mI (401) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (388) cpu_start: App cpu up.[0m
+[0;32mI (419) cpu_start: Pro cpu start user code[0m
+[0;32mI (419) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (419) cpu_start: Application information:[0m
+[0;32mI (423) cpu_start: Project name:     wifi[0m
+[0;32mI (428) cpu_start: App version:      v5.1.1[0m
+[0;32mI (433) cpu_start: Compile time:     Oct 31 2023 16:43:40[0m
+[0;32mI (439) cpu_start: ELF file SHA256:  4fb48dc3528d62fc...[0m
+[0;32mI (445) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (450) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (455) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (460) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (464) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (472) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (478) heap_init: At 3FFB7738 len 000288C8 (162 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 40095574 len 0000AA8C (42 KiB): IRAM[0m
+[0;32mI (504) spi_flash: detected chip: generic[0m
+[0;32mI (507) spi_flash: flash io: dio[0m
+[0;33mW (511) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (525) app_start: Starting scheduler on CPU0[0m
+[0;32mI (530) app_start: Starting scheduler on CPU1[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+I (570) wifi:wifi driver task: 3ffbe330, prio:23, stack:6656, core=0
+I (570) wifi:wifi firmware version: ce9244d
+I (570) wifi:wifi certification version: v7.0
+I (570) wifi:config NVS flash: enabled
+I (570) wifi:config nano formating: disabled
+I (580) wifi:Init data frame dynamic rx buffer num: 32
+I (580) wifi:Init management frame dynamic rx buffer num: 32
+I (590) wifi:Init management short buffer num: 32
+I (590) wifi:Init dynamic tx buffer num: 32
+I (600) wifi:Init static rx buffer size: 1600
+I (600) wifi:Init static rx buffer num: 10
+I (600) wifi:Init dynamic rx buffer num: 32
+[0;32mI (610) wifi_init: rx ba win: 6[0m
+[0;32mI (610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (610) wifi_init: udp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp tx win: 5744[0m
+[0;32mI (630) wifi_init: tcp rx win: 5744[0m
+[0;32mI (630) wifi_init: tcp mss: 1440[0m
+[0;32mI (630) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (640) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (640) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (750) wifi:mode : sta (0c:8b:95:95:cf:b0)
+I (750) wifi:enable tsf
+E (750) wifi:failed to post WiFi event=2 ret=259
+Start scanning...E (6160) wifi:failed to post WiFi event=1 ret=259
+ completed!
+Found 83 access points:
+               SSID              | Channel | RSSI |   MAC 
+
+Enclave MoveIn Temporary Network |      11 |  
+           [0;31mE (6250) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     The Enclave WiFi |      11 |  
+       [0;31mE (6260) task_wdt: esp_task_wdt_reset(783): task not found[0m
+        J-304@The_enclave |      11 |  
+   [0;31mE (6270) task_wdt: esp_task_wdt_reset(783): task not found[0m
+               Enclave Temp B |      11 |  [0;31mE (6280) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+                The Enclave WiFi |       1 [0;31mE (6290) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|  
+               J-204@The_enclave |      [0;31mE (6300) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 1 |  
+Enclave MoveIn Temporary Network |  [0;31mE (6310) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     1 |  
+Enclave MoveIn Temporary Network[0;31mE (6320) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |       4 |  
+                The Enclave [0;31mE (6330) task_wdt: esp_task_wdt_reset(783): task not found[0m
+WiFi |       4 |  
+               J-104@The[0;31mE (6340) task_wdt: esp_task_wdt_reset(783): task not found[0m
+_enclave |       4 |  
+                The E[0;31mE (6350) task_wdt: esp_task_wdt_reset(783): task not found[0m
+nclave WiFi |      11 |  
+                 [0;31mE (6360) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     J 306 Temp |      11 |  
+             [0;31mE (6370) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  J-305@The_enclave |      11 |  
+         [0;31mE (6380) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       The Enclave WiFi |       8 |  
+     [0;31mE (6390) task_wdt: esp_task_wdt_reset(783): task not found[0m
+          J-205@The_enclave |       8 |  
+En[0;31mE (6400) task_wdt: esp_task_wdt_reset(783): task not found[0m
+clave MoveIn Temporary Network |      11 |  [0;31mE (6410) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+                      SETUP-1224 |       6[0;31mE (6420) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |  
+                                 |    [0;31mE (6430) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   6 |  
+                                 |[0;31mE (6440) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       6 |  
+Enclave MoveIn Temporary Networ[0;31mE (6450) task_wdt: esp_task_wdt_reset(783): task not found[0m
+k |       8 |  
+Enclave MoveIn Temporary Ne[0;31mE (6460) task_wdt: esp_task_wdt_reset(783): task not found[0m
+twork |       1 |  
+                       [0;31mE (6470) task_wdt: esp_task_wdt_reset(783): task not found[0m
+          |       6 |  
+                   [0;31mE (6480) task_wdt: esp_task_wdt_reset(783): task not found[0m
+              |       6 |  
+       TP-LINK_[0;31mE (6490) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Smart Plug_A985_G |       6 |  
+Enclave Move[0;31mE (6500) task_wdt: esp_task_wdt_reset(783): task not found[0m
+In Temporary Network |       8 |  
+        [0;31mE (6510) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                  J-203T |       1 |  
+    [0;31mE (6520) task_wdt: esp_task_wdt_reset(783): task not found[0m
+            The Enclave WiFi |       1 |  
+[0;31mE (6530) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                The Enclave WiFi |       1 |[0;31mE (6540) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  
+                       I-310temp |       [0;31mE (6550) task_wdt: esp_task_wdt_reset(783): task not found[0m
+1 |  
+                  Enclave Temp A |   [0;31mE (6560) task_wdt: esp_task_wdt_reset(783): task not found[0m
+    1 |  
+                The Enclave WiFi [0;31mE (6570) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|       8 |  
+Enclave MoveIn Temporary Netw[0;31mE (6580) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ork |      11 |  
+               J-103@The_[0;31mE (6590) task_wdt: esp_task_wdt_reset(783): task not found[0m
+enclave |       1 |  
+               I-309@T[0;31mE (6600) task_wdt: esp_task_wdt_reset(783): task not found[0m
+he_enclave |       1 |  
+             no st[0;31mE (6610) task_wdt: esp_task_wdt_reset(783): task not found[0m
+inkies allowed |       3 |  
+Enclave MoveIn[0;31mE (6620) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ Temporary Network |       4 |  
+          [0;31mE (6630) task_wdt: esp_task_wdt_reset(783): task not found[0m
+             NETGEAR83 |       4 |  
+Enclav[0;31mE (6640) task_wdt: esp_task_wdt_reset(783): task not found[0m
+e MoveIn Temporary Network |       6 |  
+Enc[0;31mE (6650) task_wdt: esp_task_wdt_reset(783): task not found[0m
+lave MoveIn Temporary Network |      11 |  [0;31mE (6660) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+                                 |      11 [0;31mE (6670) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|  
+                                 |     [0;31mE (6680) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  8 |  
+                The Enclave WiFi | [0;31mE (6690) task_wdt: esp_task_wdt_reset(783): task not found[0m
+      8 |  
+Enclave MoveIn Temporary Network[0;31mE (6700) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |       8 |  
+                      I-207 [0;31mE (6710) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Temp |      11 |  
+Enclave MoveIn Temporary[0;31mE (6720) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ Network |       1 |  
+Enclave MoveIn Tempo[0;31mE (6730) task_wdt: esp_task_wdt_reset(783): task not found[0m
+rary Network |       1 |  
+Enclave MoveIn T[0;31mE (6740) task_wdt: esp_task_wdt_reset(783): task not found[0m
+emporary Network |       1 |  
+             [0;31mE (6750) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  H-310@The_enclave |       6 |  
+Enclave M[0;31mE (6760) task_wdt: esp_task_wdt_reset(783): task not found[0m
+oveIn Temporary Network |       8 |  
+Encla[0;31mE (6770) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ve MoveIn Temporary Network |      11 |  
+ [0;31mE (6780) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                     I-209@TEMP |      11 | [0;31mE (6790) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 
+               H-304@The_enclave |       1[0;31mE (6800) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |  
+                The Enclave WiFi |    [0;31mE (6810) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   1 |  
+                                 |[0;31mE (6820) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       1 |  
+               DIRECT-PQ-VIZIO[0;31mE (6830) task_wdt: esp_task_wdt_reset(783): task not found[0m
+TV |       1 |  
+   DIRECT-B2-HP ENVY 5000 [0;31mE (6840) task_wdt: esp_task_wdt_reset(783): task not found[0m
+series |       4 |  
+               H-106@38[0;31mE (6850) task_wdt: esp_task_wdt_reset(783): task not found[0m
+76enclave |       4 |  
+                   [0;31mE (6860) task_wdt: esp_task_wdt_reset(783): task not found[0m
+        Th783 |     128 |  
+               [0;31mE (6870) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                  |       0 |  
+           [0;31mE (6880) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                      |      63 |  
+        [0;31mE (6890) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                         |       8 |  
+    [0;31mE (6900) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                   I-310temp |      11 |  
+[0;31mE (6910) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Enclave MoveIn TemporaP��?etwork |      11 |[0;31mE (6920) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  
+Enclave MoveIn Temporary Network |      [0;31mE (6930) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 1 |  
+                The Enclave WiFi |   [0;31mE (6940) task_wdt: esp_task_wdt_reset(783): task not found[0m
+    4 |  
+                The Enclave WiFi [0;31mE (6950) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|       4 |  
+                The Enclave W[0;31mE (6960) task_wdt: esp_task_wdt_reset(783): task not found[0m
+iFi |      11 |  
+                The Encla[0;31mE (6970) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ve WiFi |      11 |  
+                The E[0;31mE (6980) task_wdt: esp_task_wdt_reset(783): task not found[0m
+nclave WiFi |       1 |  
+               H-2[0;31mE (6990) task_wdt: esp_task_wdt_reset(783): task not found[0m
+04@The_enclave |       4 |  
+              [0;31mE (7000) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ J-306@The_enclave |       8 |  
+          [0;31mE (7010) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ eufy RoboVac 25C-8ECE |       1 |  
+Enclav[0;31mE (7020) task_wdt: esp_task_wdt_reset(783): task not found[0m
+e MoveIn Temporary Network |       8 |  
+En[0;31mE (7030) task_wdt: esp_task_wdt_reset(783): task not found[0m
+clave MoveIn Temporary Network |       8 |  [0;31mE (7040) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+Enclave MoveIn Temporary Network |       8 [0;31mE (7050) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|  
+                The Enclave WiFi |     [0;31mE (7060) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 11 |  
+Enclave MoveIn Temporary Network | [0;31mE (7070) task_wdt: esp_task_wdt_reset(783): task not found[0m
+      4 |  
+Enclave MoveIn Temporary Networ[0;31mE (7080) task_wdt: esp_task_wdt_reset(783): task not found[0m
+k |      11 |  
+ DIRECT-88-HP OfficeJet Pro [0;31mE (7090) task_wdt: esp_task_wdt_reset(783): task not found[0m
+6960 |       1 |  
+Enclave MoveIn Temporary[0;31mE (7100) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ Network |      11 |  
+Enclave MoveIn Tempo[0;31mE (7110) task_wdt: esp_task_wdt_reset(783): task not found[0m
+rary Network |       1 |  
+Enclave MoveIn T[0;31mE (7120) task_wdt: esp_task_wdt_reset(783): task not found[0m
+emporary Network |       4 |  
+            [0;31mE (7130) task_wdt: esp_task_wdt_reset(783): task not found[0m
+           TEMPG-306 |      11 |  
+Guru Meditation Error: Core  0 panic'ed (InstrFetchProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x01205355  PS      : 0x00050033  A0      : 0x01205355  A1      : 0x3ffb9f40  
+A2      : 0x0000d0c2  A3      : 0x00000000  A4      : 0x00000000  A5      : 0x00000000  
+A6      : 0x00000000  A7      : 0x00000000  A8      : 0x00000000  A9      : 0x00000000  
+A10     : 0x0b000000  A11     : 0x00000000  A12     : 0x000000ab  A13     : 0x00000003  
+A14     : 0x00000004  A15     : 0x00000004  SAR     : 0x00000000  EXCCAUSE: 0x00000014  
+EXCVADDR: 0x01205354  LBEG    : 0x0000800b  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x01205352:0x3ffb9f40 0x01205352:0x00000000 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 4fb48dc3528d62fc
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 271414342, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 31 2023 16:43:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e950h (125264) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0002e978 vaddr=3ffb0000 size=016a0h (  5792) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=79c34h (498740) map[0m
+[0;32mI (336) esp_image: segment 3: paddr=000a9c5c vaddr=3ffb16a0 size=02018h (  8216) load[0m
+[0;32mI (339) esp_image: segment 4: paddr=000abc7c vaddr=40080000 size=15574h ( 87412) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu up.[0m
+[0;32mI (401) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (388) cpu_start: App cpu up.[0m
+[0;32mI (419) cpu_start: Pro cpu start user code[0m
+[0;32mI (419) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (419) cpu_start: Application information:[0m
+[0;32mI (423) cpu_start: Project name:     wifi[0m
+[0;32mI (428) cpu_start: App version:      v5.1.1[0m
+[0;32mI (433) cpu_start: Compile time:     Oct 31 2023 16:43:40[0m
+[0;32mI (439) cpu_start: ELF file SHA256:  4fb48dc3528d62fc...[0m
+[0;32mI (445) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (450) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (455) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (460) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (464) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (472) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (478) heap_init: At 3FFB7738 len 000288C8 (162 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 40095574 len 0000AA8C (42 KiB): IRAM[0m
+[0;32mI (504) spi_flash: detected chip: generic[0m
+[0;32mI (507) spi_flash: flash io: dio[0m
+[0;33mW (511) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (525) app_start: Starting scheduler on CPU0[0m
+[0;32mI (530) app_start: Starting scheduler on CPU1[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+I (570) wifi:wifi driver task: 3ffbe330, prio:23, stack:6656, core=0
+I (570) wifi:wifi firmware version: ce9244d
+I (570) wifi:wifi certification version: v7.0
+I (570) wifi:config NVS flash: enabled
+I (570) wifi:config nano formating: disabled
+I (580) wifi:Init data frame dynamic rx buffer num: 32
+I (580) wifi:Init management frame dynamic rx buffer num: 32
+I (590) wifi:Init management short buffer num: 32
+I (590) wifi:Init dynamic tx buffer num: 32
+I (600) wifi:Init static rx buffer size: 1600
+I (600) wifi:Init static rx buffer num: 10
+I (600) wifi:Init dynamic rx buffer num: 32
+[0;32mI (610) wifi_init: rx ba win: 6[0m
+[0;32mI (610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (610) wifi_init: udp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp tx win: 5744[0m
+[0;32mI (630) wifi_init: tcp rx win: 5744[0m
+[0;32mI (630) wifi_init: tcp mss: 1440[0m
+[0;32mI (630) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (640) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (640) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (750) wifi:mode : sta (0c:8b:95:95:cf:b0)
+I (750) wifi:enable tsf
+E (750) wifi:failed to post WiFi event=2 ret=259
+Start scanning...E (6160) wifi:failed to post WiFi event=1 ret=259
+ completed!
+Found 74 access points:
+               SSID              | Channel | RSSI |   MAC 
+
+Enclave MoveIn Temporary Network |      11 |  
+           Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x4000c26c  PS      : 0x00060033  A0      : 0x8008a30b  A1      : 0x3ffba510  
+A2      : 0x00000000  A3      : 0x3f403830  A4      : 0x00000014  A5      : 0x00060023  
+A6      : 0xb33fffff  A7      : 0xb33fffff  A8      : 0x00000001  A9      : 0x00000000  
+A10     : 0x00000001  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3ffb2120  
+A14     : 0x3ffb3be4  A15     : 0x00060021  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4000c269:0x3ffba510 0x4008a308:0x3ffba530 0x4008b978:0x3ffba550 0x4008b92a:0x6f4d2065 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 4fb48dc3528d62fc
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 271414342, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 31 2023 16:43:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e950h (125264) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0002e978 vaddr=3ffb0000 size=016a0h (  5792) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=79c34h (498740) map[0m
+[0;32mI (336) esp_image: segment 3: paddr=000a9c5c vaddr=3ffb16a0 size=02018h (  8216) load[0m
+[0;32mI (339) esp_image: segment 4: paddr=000abc7c vaddr=40080000 size=15574h ( 87412) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu up.[0m
+[0;32mI (401) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (388) cpu_start: App cpu up.[0m
+[0;32mI (419) cpu_start: Pro cpu start user code[0m
+[0;32mI (419) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (419) cpu_start: Application information:[0m
+[0;32mI (423) cpu_start: Project name:     wifi[0m
+[0;32mI (428) cpu_start: App version:      v5.1.1[0m
+[0;32mI (433) cpu_start: Compile time:     Oct 31 2023 16:43:40[0m
+[0;32mI (439) cpu_start: ELF file SHA256:  4fb48dc3528d62fc...[0m
+[0;32mI (445) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (450) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (455) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (459) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (464) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (472) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (477) heap_init: At 3FFB7738 len 000288C8 (162 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 40095574 len 0000AA8C (42 KiB): IRAM[0m
+[0;32mI (504) spi_flash: detected chip: generic[0m
+[0;32mI (507) spi_flash: flash io: dio[0m
+[0;33mW (511) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (525) app_start: Starting scheduler on CPU0[0m
+[0;32mI (530) app_start: Starting scheduler on CPU1[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+I (570) wifi:wifi driver task: 3ffbe330, prio:23, stack:6656, core=0
+I (570) wifi:wifi firmware version: ce9244d
+I (570) wifi:wifi certification version: v7.0
+I (570) wifi:config NVS flash: enabled
+I (570) wifi:config nano formating: disabled
+I (580) wifi:Init data frame dynamic rx buffer num: 32
+I (580) wifi:Init management frame dynamic rx buffer num: 32
+I (590) wifi:Init management short buffer num: 32
+I (590) wifi:Init dynamic tx buffer num: 32
+I (600) wifi:Init static rx buffer size: 1600
+I (600) wifi:Init static rx buffer num: 10
+I (600) wifi:Init dynamic rx buffer num: 32
+[0;32mI (610) wifi_init: rx ba win: 6[0m
+[0;32mI (610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (610) wifi_init: udp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp tx win: 5744[0m
+[0;32mI (630) wifi_init: tcp rx win: 5744[0m
+[0;32mI (630) wifi_init: tcp mss: 1440[0m
+[0;32mI (630) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (640) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (640) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (750) wifi:mode : sta (0c:8b:95:95:cf:b0)
+I (750) wifi:enable tsf
+E (750) wifi:failed to post WiFi event=2 ret=259
+Start scanning...E (6160) wifi:failed to post WiFi event=1 ret=259
+ completed!
+Found 68 access points:
+               SSID              | Channel | RSSI |   MAC 
+
+Enclave MoveIn Temporary Network |      11 |  
+                The Enclave WiFi |      11 |  
+               J-304@The_enclave |      11 |  
+                  Enclave Temp B |      11 |  
+                                 |       1 |  
+                The Enclave WiFi |       1 |  
+               J-204@The_enclave |       1 |  
+Enclave MoveIn Temporary Network |       1 |  
+               J-104@The_enclave |       4 |  
+Enclave MoveIn Temporary Network |       4 |  
+                The Enclave WiFi |       4 |  
+                The Enclave WiFi |      11 |  
+                The Enclave WiFi |       8 |  
+               J-205@The_enclave |       8 |  
+               J-305@The_enclave |      11 |  
+                      J 306 Temp |      11 |  
+             no stinkies allowed |       3 |  
+Enclave MoveIn Temporary Network |       8 |  
+                      SETUP-1224 |       6 |  
+                                 |       6 |  
+Enclave MoveIn Temporary Network |      11 |  
+Enclave MoveIn Temporary Network |       1 |  
+       TP-LINK_Smart Plug_A985_G |       6 |  
+                                 |       6 |  
+                                 |       6 |  
+                                 |       6 |  
+                The Enclave WiFi |       1 |  
+               I-309@The_enclave |       1 |  
+                The Enclave WiFi |       1 |  
+                  Enclave Temp A |       1 |  
+                          J-203T |       1 |  
+                       I-310temp |       8 |  
+Enclave MoveIn Temporary Network |       1 |  
+                       NETGEAR83 |       4 |  
+               I-108@The_enclave |       8 |  
+               J-103@The_enclave |       1 |  
+Enclave MoveIn Temporary Network |       8 |  
+Enclave MoveIn Temporary Network |      11 |  
+Enclave MoveIn Temporary Network |       8 |  
+Enclave MoveIn Temporary Network |       1 |  
+Enclave MoveIn Temporary Network |       4 |  
+                The Enclave WiFi |       8 |  
+Enclave MoveIn Temporary Network |       8 |  
+                The Enclave WiFi |      11 |  
+                      I-207 Temp |      11 |  
+                The Enclave WiFi |       1 |  
+Enclave MoveIn Temporary Network |       4 |  
+                  Enclave Temp A |       8 |  
+                The Enclave WiFi |       8 |  
+               H-306@The_enclave |      11 |  
+Enclave MoveIn Temporary Network |      11 |  
+Enclave MoveIn Temporary Network |       1 |  
+Enclave MoveIn Temporary Network |       1 |  
+               H-204@The_enclave |       4 |  
+   DIRECT-B2-HP ENVY 5000 series |       4 |  
+Enclave MoveIn Temporary Network |       6 |  
+                The Enclave WiFi |      11 |  
+                              En |       0 |  
+                                 |      63 |  
+                                 |       0 |  
+                          MNWHJD |       2 |  
+                       I-310temp |       4 |  
+Enclave MoveIn Temporary Network |       4 |  
+Enclave MoveIn Temporary Network |       4 |  
+Enclave MoveIn Temporary Network |       9 |  
+                      I-209@TEMP |      11 |  
+Enclave MoveIn Temporary Network |       4 |  
+Enclave MoveIn Temporary Network |       4 |  
+Guru Meditation Error: Core  0 panic'ed (InstrFetchProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x01205355  PS      : 0x00050033  A0      : 0x01205355  A1      : 0x3ffb9f40  
+A2      : 0x6e452841  A3      : 0x76616c63  A4      : 0x6f4d2065  A5      : 0x6e496576  
+A6      : 0x6d655420  A7      : 0x61726f70  A8      : 0x4e207972  A9      : 0x6f777465  
+A10     : 0x01006b72  A11     : 0x00000000  A12     : 0x000000a9  A13     : 0x00000000  
+A14     : 0x00000000  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x00000014  
+EXCVADDR: 0x01205354  LBEG    : 0x0000240b  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x01205352:0x3ffb9f40 0x01205352:0x00000000 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 4fb48dc3528d62fc
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 271414342, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 31 2023 16:43:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e950h (125264) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0002e978 vaddr=3ffb0000 size=016a0h (  5792) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=79c34h (498740) map[0m
+[0;32mI (336) esp_image: segment 3: paddr=000a9c5c vaddr=3ffb16a0 size=02018h (  8216) load[0m
+[0;32mI (339) esp_image: segment 4: paddr=000abc7c vaddr=40080000 size=15574h ( 87412) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu up.[0m
+[0;32mI (401) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (388) cpu_start: App cpu up.[0m
+[0;32mI (419) cpu_start: Pro cpu start user code[0m
+[0;32mI (419) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (419) cpu_start: Application information:[0m
+[0;32mI (423) cpu_start: Project name:     wifi[0m
+[0;32mI (428) cpu_start: App version:      v5.1.1[0m
+[0;32mI (433) cpu_start: Compile time:     Oct 31 2023 16:43:40[0m
+[0;32mI (439) cpu_start: ELF file SHA256:  4fb48dc3528d62fc...[0m
+[0;32mI (445) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (450) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (455) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (460) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (464) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (472) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (478) heap_init: At 3FFB7738 len 000288C8 (162 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 40095574 len 0000AA8C (42 KiB): IRAM[0m
+[0;32mI (504) spi_flash: detected chip: generic[0m
+[0;32mI (507) spi_flash: flash io: dio[0m
+[0;33mW (511) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (525) app_start: Starting scheduler on CPU0[0m
+[0;32mI (530) app_start: Starting scheduler on CPU1[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+I (570) wifi:wifi driver task: 3ffbe330, prio:23, stack:6656, core=0
+I (570) wifi:wifi firmware version: ce9244d
+I (570) wifi:wifi certification version: v7.0
+I (570) wifi:config NVS flash: enabled
+I (570) wifi:config nano formating: disabled
+I (580) wifi:Init data frame dynamic rx buffer num: 32
+I (580) wifi:Init management frame dynamic rx buffer num: 32
+I (590) wifi:Init management short buffer num: 32
+I (590) wifi:Init dynamic tx buffer num: 32
+I (600) wifi:Init static rx buffer size: 1600
+I (600) wifi:Init static rx buffer num: 10
+I (600) wifi:Init dynamic rx buffer num: 32
+[0;32mI (610) wifi_init: rx ba win: 6[0m
+[0;32mI (610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (610) wifi_init: udp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp tx win: 5744[0m
+[0;32mI (630) wifi_init: tcp rx win: 5744[0m
+[0;32mI (630) wifi_init: tcp mss: 1440[0m
+[0;32mI (630) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (640) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (640) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (750) wifi:mode : sta (0c:8b:95:95:cf:b0)
+I (750) wifi:enable tsf
+E (750) wifi:failed to post WiFi event=2 ret=259
+Start scanning...E (6160) wifi:failed to post WiFi event=1 ret=259
+ completed!
+Found 73 access points:
+               SSID              | Channel | RSSI |   MAC 
+
+Enclave MoveIn Temporary Network |      11 |  
+           [0;31mE (6250) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     The Enclave WiFi |      11 |  
+       [0;31mE (6260) task_wdt: esp_task_wdt_reset(783): task not found[0m
+           Enclave Temp B |      11 |  
+   [0;31mE (6270) task_wdt: esp_task_wdt_reset(783): task not found[0m
+            J-304@The_enclave |      11 |  [0;31mE (6280) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+                                 |       1 [0;31mE (6290) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|  
+Enclave MoveIn Temporary Network |      [0;31mE (6300) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 1 |  
+                The Enclave WiFi |  [0;31mE (6310) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     1 |  
+               J-204@The_enclave[0;31mE (6320) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |       1 |  
+Enclave MoveIn Temporary Net[0;31mE (6330) task_wdt: esp_task_wdt_reset(783): task not found[0m
+work |       4 |  
+                The Encl[0;31mE (6340) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ave WiFi |       4 |  
+               J-104@[0;31mE (6350) task_wdt: esp_task_wdt_reset(783): task not found[0m
+The_enclave |       4 |  
+                T[0;31mE (6360) task_wdt: esp_task_wdt_reset(783): task not found[0m
+he Enclave WiFi |      11 |  
+             [0;31mE (6370) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  J-205@The_enclave |       8 |  
+         [0;31mE (6380) task_wdt: esp_task_wdt_reset(783): task not found[0m
+             J 306 Temp |      11 |  
+     [0;31mE (6390) task_wdt: esp_task_wdt_reset(783): task not found[0m
+           The Enclave WiFi |       8 |  
+  [0;31mE (6400) task_wdt: esp_task_wdt_reset(783): task not found[0m
+             J-305@The_enclave |      11 |  [0;31mE (6410) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+                      SETUP-1224 |       6[0;31mE (6420) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |  
+                                 |    [0;31mE (6430) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   6 |  
+                                 |[0;31mE (6440) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       6 |  
+                               [0;31mE (6450) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  |       6 |  
+                           [0;31mE (6460) task_wdt: esp_task_wdt_reset(783): task not found[0m
+      |       6 |  
+Enclave MoveIn Temporar[0;31mE (6470) task_wdt: esp_task_wdt_reset(783): task not found[0m
+y Network |       8 |  
+       TP-LINK_Smar[0;31mE (6480) task_wdt: esp_task_wdt_reset(783): task not found[0m
+t Plug_A985_G |       6 |  
+               [0;31mE (6490) task_wdt: esp_task_wdt_reset(783): task not found[0m
+        I-310temp |       8 |  
+            [0;31mE (6500) task_wdt: esp_task_wdt_reset(783): task not found[0m
+      Enclave Temp A |       1 |  
+        [0;31mE (6510) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     no stinkies allowed |       3 |  
+Encl[0;31mE (6520) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ave MoveIn Temporary Network |       8 |  
+[0;31mE (6530) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Enclave MoveIn Temporary Network |      11 |[0;31mE (6540) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  
+Enclave MoveIn Temporary Network |       [0;31mE (6550) task_wdt: esp_task_wdt_reset(783): task not found[0m
+1 |  
+                The Enclave WiFi |   [0;31mE (6560) task_wdt: esp_task_wdt_reset(783): task not found[0m
+    8 |  
+               I-108@The_enclave [0;31mE (6570) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|       8 |  
+               I-309@The_encl[0;31mE (6580) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ave |       1 |  
+                The Encla[0;31mE (6590) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ve WiFi |       1 |  
+                  Encl[0;31mE (6600) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ave Temp A |       8 |  
+Enclave MoveIn Tem[0;31mE (6610) task_wdt: esp_task_wdt_reset(783): task not found[0m
+porary Network |      11 |  
+              [0;31mE (6620) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ I-208@The_enclave |      11 |  
+          [0;31mE (6630) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                J-203T |       1 |  
+      [0;31mE (6640) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                 NETGEAR83 |       4 |  
+Enc[0;31mE (6650) task_wdt: esp_task_wdt_reset(783): task not found[0m
+lave MoveIn Temporary Network |       6 |  [0;31mE (6660) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+   DIRECT-7E-HP ENVY 5000 series |       6 [0;31mE (6670) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|  
+Enclave MoveIn Temporary Network |     [0;31mE (6680) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  8 |  
+                       I-310temp | [0;31mE (6690) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     11 |  
+                The Enclave WiFi[0;31mE (6700) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |      11 |  
+               J-103@The_enc[0;31mE (6710) task_wdt: esp_task_wdt_reset(783): task not found[0m
+lave |       1 |  
+                The Encl[0;31mE (6720) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ave WiFi |       1 |  
+Enclave MoveIn Tempo[0;31mE (6730) task_wdt: esp_task_wdt_reset(783): task not found[0m
+rary Network |       1 |  
+   DIRECT-B2-HP [0;31mE (6740) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ENVY 5000 series |       4 |  
+             [0;31mE (6750) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   The Enclave WiFi |       8 |  
+         [0;31mE (6760) task_wdt: esp_task_wdt_reset(783): task not found[0m
+         Enclave Temp A |      11 |  
+     [0;31mE (6770) task_wdt: esp_task_wdt_reset(783): task not found[0m
+           The Enclave WiFi |       1 |  
+ [0;31mE (6780) task_wdt: esp_task_wdt_reset(783): task not found[0m
+               The Enclave WiFi |       4 | [0;31mE (6790) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 
+                The Enclave WiFi |       6[0;31mE (6800) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |  
+               H-310@The_enclave |    [0;31mE (6810) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   6 |  
+Enclave MoveIn Temporary Network |[0;31mE (6820) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       8 |  
+Enclave MoveIn Temporary Netwo[0;31mE (6830) task_wdt: esp_task_wdt_reset(783): task not found[0m
+rk |      11 |  
+                      I-20[0;31mE (6840) task_wdt: esp_task_wdt_reset(783): task not found[0m
+9@TEMP |      11 |  
+                       [0;31mE (6850) task_wdt: esp_task_wdt_reset(783): task not found[0m
+          |      11 |  
+                   [0;31mE (6860) task_wdt: esp_task_wdt_reset(783): task not found[0m
+              |     128 |  
+               [0;31mE (6870) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                  |       0 |  
+           [0;31mE (6880) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                      |      63 |  
+        [0;31mE (6890) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                         |       1 |  
+Encl[0;31mE (6900) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ave MoveIn Temporary Network |       4 |  
+[0;31mE (6910) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                       I-310temp |      11 |[0;31mE (6920) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  
+                      I-207 Temp |      [0;31mE (6930) task_wdt: esp_task_wdt_reset(783): task not found[0m
+11 |  
+Enclave MoveIn Temporary Network |   [0;31mE (6940) task_wdt: esp_task_wdt_reset(783): task not found[0m
+    8 |  
+Enclave MoveIn Temporary Network [0;31mE (6950) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|       8 |  
+Enclave MoveIn Temporary Netw[0;31mE (6960) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ork |       8 |  
+Enclave MoveIn Temporary [0;31mE (6970) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Network |       4 |  
+Enclave MoveIn Tempor[0;31mE (6980) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ary Network |       8 |  
+Enclave MoveIn Tem[0;31mE (6990) task_wdt: esp_task_wdt_reset(783): task not found[0m
+porary Network |      11 |  
+Enclave MoveIn[0;31mE (7000) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ Temporary Network |       4 |  
+Enclave Mo[0;31mE (7010) task_wdt: esp_task_wdt_reset(783): task not found[0m
+veIn Temporary Network |      11 |  
+Enclav[0;31mE (7020) task_wdt: esp_task_wdt_reset(783): task not found[0m
+e MoveIn Temporary Network |       8 |  
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Guru Meditation Error: Core  0 panic'ed (Double exception). 
+
+Core  0 register dump:
+PC      : 0x4008bb82  PS      : 0x00040436  A0      : 0x00000000  A1      : 0x3ffb96d0  
+A2      : 0x3ffb0030  A3      : 0x3ffb9710  A4      : 0x00000001  A5      : 0x3ffb9700  
+A6      : 0x00060936  A7      : 0x00040026  A8      : 0x400803c0  A9      : 0x3ffb9860  
+A10     : 0x00060636  A11     : 0x00040026  A12     : 0x3ffb9940  A13     : 0x400850ff  
+A14     : 0x00000049  A15     : 0x3ffb9284  SAR     : 0x0000000c  EXCCAUSE: 0x00000002  
+EXCVADDR: 0xffffffe0  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffff8  
+
+
+Backtrace: 0x4008bb7f:0x3ffb96d0
+
+
+
+
+ELF file SHA256: 4fb48dc3528d62fc
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 271414342, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 31 2023 16:43:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e950h (125264) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0002e978 vaddr=3ffb0000 size=016a0h (  5792) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=79c34h (498740) map[0m
+[0;32mI (336) esp_image: segment 3: paddr=000a9c5c vaddr=3ffb16a0 size=02018h (  8216) load[0m
+[0;32mI (339) esp_image: segment 4: paddr=000abc7c vaddr=40080000 size=15574h ( 87412) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu up.[0m
+[0;32mI (401) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (388) cpu_start: App cpu up.[0m
+[0;32mI (419) cpu_start: Pro cpu start user code[0m
+[0;32mI (419) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (419) cpu_start: Application information:[0m
+[0;32mI (423) cpu_start: Project name:     wifi[0m
+[0;32mI (428) cpu_start: App version:      v5.1.1[0m
+[0;32mI (433) cpu_start: Compile time:     Oct 31 2023 16:43:40[0m
+[0;32mI (439) cpu_start: ELF file SHA256:  4fb48dc3528d62fc...[0m
+[0;32mI (445) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (450) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (455) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (460) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (464) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (472) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (478) heap_init: At 3FFB7738 len 000288C8 (162 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 40095574 len 0000AA8C (42 KiB): IRAM[0m
+[0;32mI (504) spi_flash: detected chip: generic[0m
+[0;32mI (507) spi_flash: flash io: dio[0m
+[0;33mW (511) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (525) app_start: Starting scheduler on CPU0[0m
+[0;32mI (530) app_start: Starting scheduler on CPU1[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+I (570) wifi:wifi driver task: 3ffbe330, prio:23, stack:6656, core=0
+I (570) wifi:wifi firmware version: ce9244d
+I (570) wifi:wifi certification version: v7.0
+I (570) wifi:config NVS flash: enabled
+I (570) wifi:config nano formating: disabled
+I (580) wifi:Init data frame dynamic rx buffer num: 32
+I (580) wifi:Init management frame dynamic rx buffer num: 32
+I (590) wifi:Init management short buffer num: 32
+I (590) wifi:Init dynamic tx buffer num: 32
+I (600) wifi:Init static rx buffer size: 1600
+I (600) wifi:Init static rx buffer num: 10
+I (600) wifi:Init dynamic rx buffer num: 32
+[0;32mI (610) wifi_init: rx ba win: 6[0m
+[0;32mI (610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (610) wifi_init: udp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp tx win: 5744[0m
+[0;32mI (630) wifi_init: tcp rx win: 5744[0m
+[0;32mI (630) wifi_init: tcp mss: 1440[0m
+[0;32mI (630) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (640) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (640) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (750) wifi:mode : sta (0c:8b:95:95:cf:b0)
+I (750) wifi:enable tsf
+E (750) wifi:failed to post WiFi event=2 ret=259
+Start scanning...E (6160) wifi:failed to post WiFi event=1 ret=259
+ completed!
+Found 75 access points:
+               SSID              | Channel | RSSI |   MAC 
+
+Enclave MoveIn Temporary Network |      11 |  
+           [0;31mE (6250) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     The Enclave WiFi |      11 |  
+       [0;31mE (6260) task_wdt: esp_task_wdt_reset(783): task not found[0m
+           Enclave Temp B |      11 |  
+   [0;31mE (6270) task_wdt: esp_task_wdt_reset(783): task not found[0m
+            J-304@The_enclave |      11 |  [0;31mE (6280) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+                                 |       1 [0;31mE (6290) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|  
+Enclave MoveIn Temporary Network |      [0;31mE (6300) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 1 |  
+                The Enclave WiFi |  [0;31mE (6310) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     1 |  
+               J-204@The_enclave[0;31mE (6320) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |       1 |  
+Enclave MoveIn Temporary Net[0;31mE (6330) task_wdt: esp_task_wdt_reset(783): task not found[0m
+work |       4 |  
+               J-104@The[0;31mE (6340) task_wdt: esp_task_wdt_reset(783): task not found[0m
+_enclave |       4 |  
+                The E[0;31mE (6350) task_wdt: esp_task_wdt_reset(783): task not found[0m
+nclave WiFi |       4 |  
+                T[0;31mE (6360) task_wdt: esp_task_wdt_reset(783): task not found[0m
+he Enclave WiFi |      11 |  
+             [0;31mE (6370) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  J-205@The_enclave |       8 |  
+         [0;31mE (6380) task_wdt: esp_task_wdt_reset(783): task not found[0m
+             J 306 Temp |      11 |  
+     [0;31mE (6390) task_wdt: esp_task_wdt_reset(783): task not found[0m
+           The Enclave WiFi |       8 |  
+  [0;31mE (6400) task_wdt: esp_task_wdt_reset(783): task not found[0m
+             J-305@The_enclave |      11 |  [0;31mE (6410) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+                      SETUP-1224 |       6[0;31mE (6420) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |  
+                                 |    [0;31mE (6430) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   6 |  
+                                 |[0;31mE (6440) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       6 |  
+Enclave MoveIn Temporary Networ[0;31mE (6450) task_wdt: esp_task_wdt_reset(783): task not found[0m
+k |       8 |  
+       TP-LINK_Smart Plug_A[0;31mE (6460) task_wdt: esp_task_wdt_reset(783): task not found[0m
+985_G |       6 |  
+                       [0;31mE (6470) task_wdt: esp_task_wdt_reset(783): task not found[0m
+          |       6 |  
+                   [0;31mE (6480) task_wdt: esp_task_wdt_reset(783): task not found[0m
+              |       6 |  
+Enclave MoveIn [0;31mE (6490) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Temporary Network |      11 |  
+            [0;31mE (6500) task_wdt: esp_task_wdt_reset(783): task not found[0m
+           I-310temp |       8 |  
+        [0;31mE (6510) task_wdt: esp_task_wdt_reset(783): task not found[0m
+     no stinkies allowed |       3 |  
+Encl[0;31mE (6520) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ave MoveIn Temporary Network |       8 |  
+[0;31mE (6530) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Enclave MoveIn Temporary Network |       1 |[0;31mE (6540) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  
+                The Enclave WiFi |       [0;31mE (6550) task_wdt: esp_task_wdt_reset(783): task not found[0m
+8 |  
+                  Enclave Temp A |   [0;31mE (6560) task_wdt: esp_task_wdt_reset(783): task not found[0m
+    8 |  
+                                 [0;31mE (6570) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|       8 |  
+               J-103@The_encl[0;31mE (6580) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ave |       1 |  
+               I-108@The_[0;31mE (6590) task_wdt: esp_task_wdt_reset(783): task not found[0m
+enclave |       8 |  
+                      [0;31mE (6600) task_wdt: esp_task_wdt_reset(783): task not found[0m
+           |      11 |  
+                  [0;31mE (6610) task_wdt: esp_task_wdt_reset(783): task not found[0m
+               |       1 |  
+              [0;31mE (6620) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  The Enclave WiFi |       1 |  
+          [0;31mE (6630) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                J-203T |       1 |  
+Enclav[0;31mE (6640) task_wdt: esp_task_wdt_reset(783): task not found[0m
+e MoveIn Temporary Network |       1 |  
+   [0;31mE (6650) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                    NETGEAR83 |       4 |  [0;31mE (6660) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+Enclave MoveIn Temporary Network |       6 [0;31mE (6670) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|  
+   DIRECT-7E-HP ENVY 5000 series |     [0;31mE (6680) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  6 |  
+               H-204@The_enclave | [0;31mE (6690) task_wdt: esp_task_wdt_reset(783): task not found[0m
+      4 |  
+                The Enclave WiFi[0;31mE (6700) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |       8 |  
+               I-308@The_enc[0;31mE (6710) task_wdt: esp_task_wdt_reset(783): task not found[0m
+lave |       8 |  
+                  Enclav[0;31mE (6720) task_wdt: esp_task_wdt_reset(783): task not found[0m
+e Temp A |       8 |  
+   DIRECT-B2-HP ENVY[0;31mE (6730) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 5000 series |       4 |  
+               H[0;31mE (6740) task_wdt: esp_task_wdt_reset(783): task not found[0m
+-310@The_enclave |       6 |  
+             [0;31mE (6750) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  H-207@The_enclave |       8 |  
+Enclave M[0;31mE (6760) task_wdt: esp_task_wdt_reset(783): task not found[0m
+oveIn Temporary Network |       8 |  
+     [0;31mE (6770) task_wdt: esp_task_wdt_reset(783): task not found[0m
+           The Enclave WiFi |       8 |  
+ [0;31mE (6780) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                     I-209@TEMP |      11 | [0;31mE (6790) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 
+Enclave MoveIn Temporary Network |      11[0;31mE (6800) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ |  
+                The Enclave WiFi |    [0;31mE (6810) task_wdt: esp_task_wdt_reset(783): task not found[0m
+   1 |  
+                The Enclave WiFi |[0;31mE (6820) task_wdt: esp_task_wdt_reset(783): task not found[0m
+       1 |  
+Enclave MoveIn Temporary Netwo[0;31mE (6830) task_wdt: esp_task_wdt_reset(783): task not found[0m
+rk |       8 |  
+Enclave MoveIn Temporary N[0;31mE (6840) task_wdt: esp_task_wdt_reset(783): task not found[0m
+etwork |       8 |  
+                      I[0;31mE (6850) task_wdt: esp_task_wdt_reset(783): task not found[0m
+-310t3876 |      11 |  
+                   [0;31mE (6860) task_wdt: esp_task_wdt_reset(783): task not found[0m
+        En783 |     128 |  
+               [0;31mE (6870) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                  |       0 |  
+           [0;31mE (6880) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                      |      63 |  
+        [0;31mE (6890) task_wdt: esp_task_wdt_reset(783): task not found[0m
+                         |       1 |  
+    [0;31mE (6900) task_wdt: esp_task_wdt_reset(783): task not found[0m
+            The Enclave WiFi |       4 |  
+[0;31mE (6910) task_wdt: esp_task_wdt_reset(783): task not found[0m
+Enclave MoveIn TemporaP��?etwork |       4 |[0;31mE (6920) task_wdt: esp_task_wdt_reset(783): task not found[0m
+  
+Enclave MoveIn Temporary Network |      [0;31mE (6930) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ 4 |  
+Enclave MoveIn Temporary Network |   [0;31mE (6940) task_wdt: esp_task_wdt_reset(783): task not found[0m
+    8 |  
+Enclave MoveIn Temporary Network [0;31mE (6950) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|       8 |  
+                The Enclave W[0;31mE (6960) task_wdt: esp_task_wdt_reset(783): task not found[0m
+iFi |      11 |  
+               I-208@The_[0;31mE (6970) task_wdt: esp_task_wdt_reset(783): task not found[0m
+enclave |      11 |  
+Enclave MoveIn Tempor[0;31mE (6980) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ary Network |       1 |  
+Enclave MoveIn Tem[0;31mE (6990) task_wdt: esp_task_wdt_reset(783): task not found[0m
+porary Network |       4 |  
+Enclave MoveIn[0;31mE (7000) task_wdt: esp_task_wdt_reset(783): task not found[0m
+ Temporary Network |      11 |  
+Enclave Mo[0;31mE (7010) task_wdt: esp_task_wdt_reset(783): task not found[0m
+veIn Temporary Network |       1 |  
+Enclav[0;31mE (7020) task_wdt: esp_task_wdt_reset(783): task not found[0m
+e MoveIn Temporary Network |       4 |  
+En[0;31mE (7030) task_wdt: esp_task_wdt_reset(783): task not found[0m
+clave MoveIn Temporary Network |       1 |  [0;31mE (7040) task_wdt: esp_task_wdt_reset(783): task not found[0m
+
+Enclave MoveIn Temporary Network |       4 [0;31mE (7050) task_wdt: esp_task_wdt_reset(783): task not found[0m
+|  
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Guru Meditation Error: Core  0 panic'ed (Double exception). 
+
+Core  0 register dump:
+PC      : 0x4008bb82  PS      : 0x00040436  A0      : 0x00000000  A1      : 0x3ffb96d0  
+A2      : 0x3ffb0030  A3      : 0x3ffb9710  A4      : 0x00000001  A5      : 0x3ffb9700  
+A6      : 0x00060936  A7      : 0x00040026  A8      : 0x400803c0  A9      : 0x3ffb9860  
+A10     : 0x00060636  A11     : 0x00040026  A12     : 0x3ffb9940  A13     : 0x400850ff  
+A14     : 0x0000004b  A15     : 0x3ffb9284  SAR     : 0x0000000c  EXCCAUSE: 0x00000002  
+EXCVADDR: 0xffffffe0  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffff8  
+
+
+Backtrace: 0x4008bb7f:0x3ffb96d0
+
+
+
+
+ELF file SHA256: 4fb48dc3528d62fc
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 271414342, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 31 2023 16:43:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e950h (125264) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0002e978 vaddr=3ffb0000 size=016a0h (  5792) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=79c34h (498740) map[0m
+[0;32mI (336) esp_image: segment 3: paddr=000a9c5c vaddr=3ffb16a0 size=02018h (  8216) load[0m
+[0;32mI (339) esp_image: segment 4: paddr=000abc7c vaddr=40080000 size=15574h ( 87412) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu up.[0m
+[0;32mI (401) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (388) cpu_start: App cpu up.[0m
+[0;32mI (419) cpu_start: Pro cpu start user code[0m
+[0;32mI (419) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (419) cpu_start: Application information:[0m
+[0;32mI (423) cpu_start: Project name:     wifi[0m
+[0;32mI (428) cpu_start: App version:      v5.1.1[0m
+[0;32mI (433) cpu_start: Compile time:     Oct 31 2023 16:43:40[0m
+[0;32mI (439) cpu_start: ELF file SHA256:  4fb48dc3528d62fc...[0m
+[0;32mI (445) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (450) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (455) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (460) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (464) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (472) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (478) heap_init: At 3FFB7738 len 000288C8 (162 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 40095574 len 0000AA8C (42 KiB): IRAM[0m
+[0;32mI (504) spi_flash: detected chip: generic[0m
+[0;32mI (507) spi_flash: flash io: dio[0m
+[0;33mW (511) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (525) app_start: Starting scheduler on CPU0[0m
+[0;32mI (530) app_start: Starting scheduler on CPU1[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+I (570) wifi:wifi driver task: 3ffbe330, prio:23, stack:6656, core=0
+I (570) wifi:wifi firmware version: ce9244d
+I (570) wifi:wifi certification version: v7.0
+I (570) wifi:config NVS flash: enabled
+I (570) wifi:config nano formating: disabled
+I (580) wifi:Init data frame dynamic rx buffer num: 32
+I (580) wifi:Init management frame dynamic rx buffer num: 32
+I (590) wifi:Init management short buffer num: 32
+I (590) wifi:Init dynamic tx buffer num: 32
+I (600) wifi:Init static rx buffer size: 1600
+I (600) wifi:Init static rx buffer num: 10
+I (600) wifi:Init dynamic rx buffer num: 32
+[0;32mI (610) wifi_init: rx ba win: 6[0m
+[0;32mI (610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (610) wifi_init: udp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp mbox: 6[0m
+[0;32mI (620) wifi_init: tcp tx win: 5744[0m
+[0;32mI (630) wifi_init: tcp rx win: 5744[0m
+[0;32mI (630) wifi_init: tcp mss: 1440[0m
+[0;32mI (630) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (640) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (640) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (750) wifi:mode : sta (0c:8b:95:95:cf:b0)
+I (750) wifi:enable tsf
+E (750) wifi:failed to post WiFi event=2 ret=259
