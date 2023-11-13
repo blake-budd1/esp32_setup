@@ -52,3 +52,6 @@ Github repo with example of decoding jpegs to the ST7789:
 ## Youtube help for setting up wifi:
   - videos in this playlist go over both hosting a wifi connection on the ESP32 and connecting to an external network with the ESP32:
   - https://www.youtube.com/watch?v=4Tz5j72uiUY
+
+## Youtube video for esp32-s2:
+https://www.youtube.com/watch?v=gzJCpKXPF20
