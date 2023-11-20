@@ -57,7 +57,7 @@ Github repo with example of decoding jpegs to the ST7789:
 https://www.youtube.com/watch?v=gzJCpKXPF20
 
 ## Setting up Python Virtual Environment 
-cd TheModernJukebox/hardware_src
-python -m venv <insert virtual env name>
-source <insert virtual env name>/bin/activate
+- cd TheModernJukebox/hardware_src
+- python -m venv <insert virtual env name>
+- source <insert virtual env name>/bin/activate
 
