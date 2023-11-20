@@ -61,3 +61,6 @@ https://www.youtube.com/watch?v=gzJCpKXPF20
 - python -m venv <insert virtual env name>
 - source <insert virtual env name>/bin/activate
 
+## Python Image Code References
+- https://www.geeksforgeeks.org/how-to-download-an-image-from-a-url-in-python/
+- https://forum.opencv.org/t/how-to-expand-image-to-fullscreen-with-imshow-method/6924
